@@ -12,6 +12,7 @@ goog.require('athens.devcards.left_sidebar');
 goog.require('athens.devcards.node_page');
 goog.require('athens.devcards.sci_boxes');
 goog.require('athens.devcards.style_guide');
+goog.require('athens.devcards.styling_with_stylefy');
 goog.require('cljsjs.react');
 goog.require('cljsjs.react.dom');
 goog.require('devcards.core');
