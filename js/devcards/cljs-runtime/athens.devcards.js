@@ -10,6 +10,7 @@ goog.require('athens.devcards.db_boxes');
 goog.require('athens.devcards.icons');
 goog.require('athens.devcards.left_sidebar');
 goog.require('athens.devcards.node_page');
+goog.require('athens.devcards.parser');
 goog.require('athens.devcards.sci_boxes');
 goog.require('athens.devcards.style_guide');
 goog.require('athens.devcards.styling_with_stylefy');
