@@ -1,7 +1,10 @@
 goog.provide('athens.core');
 goog.require('cljs.core');
+goog.require('athens.coeffects');
 goog.require('athens.config');
+goog.require('athens.effects');
 goog.require('athens.events');
+goog.require('athens.listeners');
 goog.require('athens.router');
 goog.require('athens.subs');
 goog.require('athens.views');
@@ -25,12 +28,10 @@ return reagent.core.render.cljs$core$IFn$_invoke$arity$2(new cljs.core.Persisten
 athens.core.init = (function athens$core$init(){
 stylefy.core.init.cljs$core$IFn$_invoke$arity$0();
 
-var G__54317_54319 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"init-rfdb","init-rfdb",-460710127)], null);
-(re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1 ? re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1(G__54317_54319) : re_frame.core.dispatch_sync.call(null,G__54317_54319));
+athens.listeners.init();
 
-var G__54318_54320 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boot","boot",2007860585)], null);
-(re_frame.core.dispatch.cljs$core$IFn$_invoke$arity$1 ? re_frame.core.dispatch.cljs$core$IFn$_invoke$arity$1(G__54318_54320) : re_frame.core.dispatch.call(null,G__54318_54320));
-
+var G__53702_53703 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"boot","boot",2007860585)], null);
+(re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1 ? re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1(G__53702_53703) : re_frame.core.dispatch_sync.call(null,G__53702_53703));
 
 athens.core.dev_setup();
 

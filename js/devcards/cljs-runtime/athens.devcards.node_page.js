@@ -3,37 +3,54 @@ goog.require('cljs.core');
 goog.require('athens.db');
 goog.require('athens.devcards.blocks');
 goog.require('athens.patterns');
-goog.require('athens.style');
 goog.require('cljsjs.react');
 goog.require('cljsjs.react.dom');
 goog.require('devcards.core');
+goog.require('komponentit.autosize');
 goog.require('posh.reagent');
+goog.require('reagent.core');
 athens.devcards.node_page.datoms = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2381),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"OaSVyM_nr",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("node","title","node/title",628940777),"Athens FAQ",new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2135),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"gEDJF5na2",new cljs.core.Keyword("block","string","block/string",-2066596447),"Why Clojure?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(4),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2384),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"3eptV2Zpm",new cljs.core.Keyword("block","string","block/string",-2066596447),"For a deeper breakdown of the technology [[Athens vs Roam Tech Stack]]",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2387),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"42KTGQUyp",new cljs.core.Keyword("block","string","block/string",-2066596447),"Clojure is great, read [[Why you should learn Clojure - my first month as a Clojurian]]",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(3040),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"GZLRVsreB",new cljs.core.Keyword("block","string","block/string",-2066596447),"Ensures possibility of feature parity with Roam.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4397),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"lxMRAb5Y5",new cljs.core.Keyword("block","string","block/string",-2066596447),"While Clojure is not necessary to develop an application, an application that promises a knowledge graph probably should be built off of a graph database.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null)], null)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2158),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"BjIm6GeRP",new cljs.core.Keyword("block","string","block/string",-2066596447),"Why open-source?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2163),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"GNaf3XzpE",new cljs.core.Keyword("block","string","block/string",-2066596447),"The short answer is the security and privacy of your data.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2347),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"jbiKpcmIX",new cljs.core.Keyword("block","string","block/string",-2066596447),"Firstly, I wouldn't be surprised if Roam was eventually open-sourced.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2176),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"gVINXaN8Y",new cljs.core.Keyword("block","string","block/string",-2066596447),"Suffice it to say that Roam being open-source is undeniably something that the team has already considered. Why is it not open-source already? You'd have to ask the Roam team, but Roam, a business, is not obligated to open-source anything.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2346),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"ZOxwo0K_7",new cljs.core.Keyword("block","string","block/string",-2066596447),"The conclusion of the [[Roam White Paper]] states that Roam's vision is a collective, \"open-source\" intelligence.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2174),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"WKWPPSYQa",new cljs.core.Keyword("block","string","block/string",-2066596447),"((iWmBJaChO))",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2349),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"VQ-ybRmNh",new cljs.core.Keyword("block","string","block/string",-2066596447),"In the Roam Slack, I recall Conor saying one eventual goal is to work on a protocol that affords interoperability between open source alternatives. I would share the message but can't find it because of Slack's 10k message limit.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2351),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"PGGS8MFH_",new cljs.core.Keyword("block","string","block/string",-2066596447),"Ultimately, we don't know when/if Roam will be open-sourced, but it's possible that Athens could accelerate or catalyze this. Regardless, there will always be some who are open-source maximalists and some who want to self-host, because that's probably really the most secure thing you can do (if you know what you're doing).",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2364),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"6oHUcLKYA",new cljs.core.Keyword("block","string","block/string",-2066596447),"The longer answer is that I believe the humble link is arguably the most important protocol to the Web itself. Even if Roam doesn't become open-source, we need to be thinking about bi-directional links as an open standard more deeply and publicly. #Hyperlink",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2350),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"rtNqzJU10",new cljs.core.Keyword("block","string","block/string",-2066596447),"The link is the fundamental parameter that drives the most valuable algorithm in the world, Google's PageRank.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2355),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"FBSTouuY2",new cljs.core.Keyword("block","string","block/string",-2066596447),"[[Venkatesh Rao]], in [[The Rhetoric of the Hyperlink]], writes: ((gHCKfrghZ))",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2366),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"QLhYQnUyA",new cljs.core.Keyword("block","string","block/string",-2066596447),"[[James P. Carse]], in [[Finite and Infinite Games]], writes: ((9wSe1KotV))",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2372),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"tR2Wna0ir",new cljs.core.Keyword("block","string","block/string",-2066596447),"The Internet is a __network__ of computers. Society is a __network__ of humans. But unlike computers, there is no \"atomic\" individual. We are defined necessarily through our relationships.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2374),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"iD4dVwEIR",new cljs.core.Keyword("block","string","block/string",-2066596447),"I hope Athens can play some role in answering the question of how we can design an open protocol for bi-directional links.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(4)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2375),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"aK4gKd6Eq",new cljs.core.Keyword("block","string","block/string",-2066596447),"And there is no better time than quaran-time to be reimagining the fabric of our social infrastructure, particularly of what I believe is the most important infrastructure of society today: the Web and the Internet more broadly.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(5)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2377),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"e6K3mCb74",new cljs.core.Keyword("block","string","block/string",-2066596447),"If you are interested in this conversation, join us in the #athens channel of the Roam Slack or ping me on Twitter.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(8)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2378),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"L5GIcpfst",new cljs.core.Keyword("block","string","block/string",-2066596447),"I'm not a protocol-designer by any means, but I do think we are standing on the shoulders of giants with regards to the [IETF's RFCs](https://en.wikipedia.org/wiki/List_of_RFCs) and the [[Semantic Web]]. More recently, we've seen a renaissance in open protocol design from the blockchain world. [Drachma](https://en.wikipedia.org/wiki/Greek_drachma) ICO anyone?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(7)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2392),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"Sb9neCBj1",new cljs.core.Keyword("block","string","block/string",-2066596447),"So let's imagine",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(6),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2164),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"Rah4b1g0Z",new cljs.core.Keyword("block","string","block/string",-2066596447),"I can see `<a href=\"www.twitter.com/tangjeff0\" **bidirectional**>Jeff's Twitter</a>` being interesting, `<a href=\"www.twitter.com\" **bidirectional**>Twitter</a>` not so much. The same goes for blogging and social networks generally.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2167),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"xYunO5c0w",new cljs.core.Keyword("block","string","block/string",-2066596447),"What if iMessage, Gmail, and [insert any other app] had bi-directional links?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2168),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"39RZ5buhi",new cljs.core.Keyword("block","string","block/string",-2066596447),"More interestingly, what if they had bi-directional links between one another?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null)], null)], null)], null)], null)], null)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2390),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"6mgsvrfj9",new cljs.core.Keyword("block","string","block/string",-2066596447),"What's the roadmap?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(5),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2391),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"wzJ0kQzXX",new cljs.core.Keyword("block","string","block/string",-2066596447),"[[Create a Minimal Viable Alternative to Roam]]",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2393),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"S94gjS2Ig",new cljs.core.Keyword("block","string","block/string",-2066596447),"Design and implement a cloud hosted Athens",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2394),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"Ip9U2KEdq",new cljs.core.Keyword("block","string","block/string",-2066596447),"Design and implement a React Native mobile client",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2395),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"VF-u1hbXF",new cljs.core.Keyword("block","string","block/string",-2066596447),"[[Begin RFCs for an open protocol for bi-directional links]] that affords interopability between Roam, Athens, and other applications",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2396),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"200PVRGaK",new cljs.core.Keyword("block","string","block/string",-2066596447),"((L5GIcpfst))",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null)], null)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(2401),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"6f_4BReoO",new cljs.core.Keyword("block","string","block/string",-2066596447),"type:: [[documentation]]",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(3026),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"HJMBcfwRz",new cljs.core.Keyword("block","string","block/string",-2066596447),"Github: https://github.com/athensresearch/athens",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(3029),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"8mZgP0oYu",new cljs.core.Keyword("block","string","block/string",-2066596447),"Roam Slack invite link (join the #athens channel): https://roamresearch.slack.com/join/shared_invite/enQtODg3NjIzODEwNDgwLTdhMjczMGYwN2YyNmMzMDcyZjViZDk0MTA2M2UxOGM5NTMxNDVhNDE1YWVkNTFjMGM4OTE3MTQ3MjEzNzE1MTA",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4391),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"kbrRsiO53",new cljs.core.Keyword("block","string","block/string",-2066596447),"Have you heard about X?",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(6),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4392),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"w1yDyW7CD",new cljs.core.Keyword("block","string","block/string",-2066596447),"There are many other great projects in this space! Checkout:",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4393),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"XT8svnebx",new cljs.core.Keyword("block","string","block/string",-2066596447),"[org-roam](https://github.com/jethrokuan/org-roam)",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4394),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"NZXZR4v6y",new cljs.core.Keyword("block","string","block/string",-2066596447),"[TiddlyRoam](https://joekroese.github.io/tiddlyroam/)",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4395),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"8Zu7tDRus",new cljs.core.Keyword("block","string","block/string",-2066596447),"",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4396),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"fhL48iiBy",new cljs.core.Keyword("block","string","block/string",-2066596447),"https://nesslabs.com/roam-research-alternatives",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4401),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"OeDMpsJPo",new cljs.core.Keyword("block","string","block/string",-2066596447),"((lxMRAb5Y5))",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null)], null)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4093),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"p1Xv2crs3",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("node","title","node/title",628940777),"Hyperlink",new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4095),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"VzPuJjfd2",new cljs.core.Keyword("block","string","block/string",-2066596447),"https://en.wikipedia.org/wiki/Hyperlink",new cljs.core.Keyword("block","open","block/open",-1875254829),false,new cljs.core.Keyword("block","order","block/order",-1429282437),(2),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4094),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"ekpvuMWbj",new cljs.core.Keyword("block","string","block/string",-2066596447),"In some hypertext, hyperlinks can be bidirectional: they can be followed in two directions, so both ends act as anchors and as targets. More complex arrangements exist, such as many-to-many links.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4096),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"sXHI5FK64",new cljs.core.Keyword("block","string","block/string",-2066596447),"The effect of following a hyperlink may vary with the hypertext system and may sometimes depend on the link itself; for instance, on the World Wide Web most hyperlinks cause the target document to replace the document being displayed, but some are marked to cause the target document to open in a new window (or, perhaps, in a new tab[2]). Another possibility is [[transclusion]], for which the link target is a document fragment that replaces the link anchor within the source document. Not only persons browsing the document follow hyperlinks. These hyperlinks may also be followed automatically by programs. A program that traverses the hypertext, following each hyperlink and gathering all the retrieved documents is known as a Web spider or crawler.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4097),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"RrYc_7MPT",new cljs.core.Keyword("block","string","block/string",-2066596447),"A **fat link** (also known as a \"one-to-many\" link, an \"extended link\"[4]) or a \"multi-tailed link\" [5] is a **hyperlink which leads to multiple endpoints**; the link is a multivalued function.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(2)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4099),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"YDDdtGRlI",new cljs.core.Keyword("block","string","block/string",-2066596447),"Webgraph is a graph, formed from web pages as vertices and hyperlinks, as directed edges.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4100),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"-egRK52sJ",new cljs.core.Keyword("block","string","block/string",-2066596447),"**Permalinks** are URLs that are intended to remain unchanged for many years into the future, yielding hyperlink that are less susceptible to **link rot**. Permalinks are often rendered simply, that is, as friendly URLs, so as to be easy for people to type and remember. Permalinks are used in order to point and redirect readers to the same Web page, blog post or any online digital media[9].",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(4)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4101),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"Dc63ZgNzb",new cljs.core.Keyword("block","string","block/string",-2066596447),"The scientific literature is a place where link persistence is crucial to the public knowledge. A 2013 study in BMC Bioinformatics analyzed 15,000 links in abstracts from Thomson Reuters\u2019 Web of Science citation index, founding that **the median lifespan of Web pages was 9.3 years, and just 62% were archived**.[10] The median lifespan of a Web page constitutes high-degree variable, but its order of magnitude usually is of some months.[11]",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(5)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4103),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"eqEXIPpP9",new cljs.core.Keyword("block","string","block/string",-2066596447),"It uses the HTML element \"a\" with the attribute \"href\" (HREF is an abbreviation for \"**Hypertext REFerence**\"[12]) and optionally also the attributes \"title\", \"target\", and \"class\" or \"id\"",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(6)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4104),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"shz0NlaMi",new cljs.core.Keyword("block","string","block/string",-2066596447),"The first widely used open protocol that included hyperlinks from any Internet site to any other Internet site was the **Gopher protocol** from 1991. It was soon eclipsed by HTML after the 1993 release of the [[Mosaic]] browser (which could handle Gopher links as well as HTML links). HTML's advantage was the ability to mix graphics, text, and hyperlinks, unlike Gopher, which just had menu-structured text and hyperlinks",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(8)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4105),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"kqTCXm_yU",new cljs.core.Keyword("block","string","block/string",-2066596447)," database program [[HyperCard]] was released in 1987 for the Apple Macintosh that allowed hyperlinking between various pages within a document, and was probably the first use of the word \"hyperlink",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(7)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4107),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"Wt3tKYZDA",new cljs.core.Keyword("block","string","block/string",-2066596447),"While hyperlinking among webpages is an intrinsic feature of the web, some websites object to being linked by other websites; some have claimed that linking to them is not allowed without permission.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(9)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4110),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"H0FXP0c3Q",new cljs.core.Keyword("block","string","block/string",-2066596447),"https://en.wikipedia.org/wiki/Backlink",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(3),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4111),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"fng0afASL",new cljs.core.Keyword("block","string","block/string",-2066596447),"**Backlinks are offered in Wikis, but usually only within the bounds of the Wiki itself and enabled by the database backend. **MediaWiki, specifically offers the \"What links here\" tool, some older Wikis, especially the first WikiWikiWeb, had the backlink functionality exposed in the page title.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4112),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"FpUyVEMN1",new cljs.core.Keyword("block","string","block/string",-2066596447),"Search engines often use the number of backlinks that a website has as one of the most important factors for determining that website's search engine ranking, popularity and importance. Google's description of its PageRank system, for instance, notes that \"Google interprets a link from page A to page B as a vote, by page A, for page B.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4118),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"JGR1uZgy0",new cljs.core.Keyword("block","string","block/string",-2066596447),"Linkback",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(4),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4119),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"C6FO9Giqn",new cljs.core.Keyword("block","string","block/string",-2066596447),"A linkback is a method for Web authors to obtain notifications when other authors link to one of their documents. This enables authors to keep track of who is linking to, or referring to, their articles. The four methods (Refback, Trackback, Pingback and Webmention) differ in how they accomplish this task.",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4120),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"wS-AtXyHn",new cljs.core.Keyword("block","string","block/string",-2066596447),"Trackback",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(5),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4121),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"hOCOOluZ8",new cljs.core.Keyword("block","string","block/string",-2066596447),"A trackback is an acknowledgment. This acknowledgment is sent via a network signal (XML-RPC ping) from the originating site to the receiving site. The receptor often publishes a link back to the originator indicating its worthiness. **Trackback requires both sites to be trackback-enabled in order to establish this communication.**",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4122),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"_avg0uZuz",new cljs.core.Keyword("block","string","block/string",-2066596447),"Some individuals or companies have abused the TrackBack feature to insert spam links on some blogs. This is similar to comment spam but avoids some of the safeguards designed to stop the latter practice. As a result, TrackBack spam filters similar to those implemented against comment spam now exist in many weblog publishing systems. Many blogs have stopped using trackbacks because dealing with spam became too much of a burden",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4123),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"JBFk5Uc7r",new cljs.core.Keyword("block","string","block/string",-2066596447),"Pingback",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(6),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4124),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"XyesVee2k",new cljs.core.Keyword("block","string","block/string",-2066596447),"In March 2014, Akamai published a report about a widely seen exploit involving Pingback that targets vulnerable WordPress sites.[1] This exploit led to massive abuse of legitimate blogs and websites and turned them into unwilling participants in a DDoS attack.[2] Details about this vulnerability have been publicized since 2012.[3]",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4126),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"ni62Bz4oU",new cljs.core.Keyword("block","string","block/string",-2066596447),"Webmention",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(7),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4127),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"cU-OjOmW8",new cljs.core.Keyword("block","string","block/string",-2066596447),"Similar to pingback, Webmention is one of four types of linkbacks, but was designed to be simpler than the XML-RPC protocol that pingback relies upon, by instead only using HTTP and x-www-urlencoded content.[2]. Beyond previous linkback protocols, Webmention also specifies protocol details for when a page that is the source of a link is deleted, or updated with new links or removal of existing links",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4128),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"z54AwF39K",new cljs.core.Keyword("block","string","block/string",-2066596447),"published as a W3C working draft on January 12, 2016.[3] As of January 12, 2017 it is a W3C recommendation",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4129),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"SXpTdaKTw",new cljs.core.Keyword("block","string","block/string",-2066596447),"Refback",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(8),new cljs.core.Keyword("block","children","block/children",-1040716209),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4130),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"KIgUMwz54",new cljs.core.Keyword("block","string","block/string",-2066596447),"A Refback is simply the usage of the HTTP referrer header to discover incoming links. Whenever a browser traverses an incoming link from Site A (originator) to Site B (receptor) the browser will send a referrer value indicating the URL from where the user came. Site B might publish a link to Site A after visiting Site A and extracting relevant information from Site A such as the title, meta information, the link text, and so on.[1]\n\n                                                    ",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4135),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"Bvexgultr",new cljs.core.Keyword("block","string","block/string",-2066596447),"",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null)], null)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4136),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"7ZHM9WBJ4",new cljs.core.Keyword("block","string","block/string",-2066596447),"type:: notes",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(0)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword("db","id","db/id",-1388397098),(4137),new cljs.core.Keyword("block","uid","block/uid",-1623585167),"YDTpf-rMy",new cljs.core.Keyword("block","string","block/string",-2066596447),"",new cljs.core.Keyword("block","open","block/open",-1875254829),true,new cljs.core.Keyword("block","order","block/order",-1429282437),(1)], null)], null)], null)], null);
 (posh.reagent.transact_BANG_.cljs$core$IFn$_invoke$arity$2 ? posh.reagent.transact_BANG_.cljs$core$IFn$_invoke$arity$2(athens.db.dsdb,athens.devcards.node_page.datoms) : posh.reagent.transact_BANG_.call(null,athens.db.dsdb,athens.devcards.node_page.datoms));
+athens.devcards.node_page.title_component = (function athens$devcards$node_page$title_component(title){
+var s = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"editing","editing",1365491601),false,new cljs.core.Keyword(null,"title","title",636505583),title], null));
+return (function (){
+if(cljs.core.truth_(new cljs.core.Keyword(null,"editing","editing",1365491601).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(s)))){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h2","h2",-372662728),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [komponentit.autosize.textarea,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"title","title",636505583).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(s)),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"height","height",1025178622),"inherit",new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"inherit"], null),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (e){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(s,cljs.core.assoc,new cljs.core.Keyword(null,"title","title",636505583),e.target.value);
+}),new cljs.core.Keyword(null,"on-blur","on-blur",814300747),(function (){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(s,cljs.core.assoc,new cljs.core.Keyword(null,"editing","editing",1365491601),false);
+})], null)], null)], null);
+} else {
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(s,cljs.core.assoc,new cljs.core.Keyword(null,"editing","editing",1365491601),true);
+})], null),new cljs.core.Keyword(null,"title","title",636505583).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(s))], null);
+}
+});
+});
 athens.devcards.node_page.node_page_el = (function athens$devcards$node_page$node_page_el(node,linked_refs,unlinked_refs){
-var map__53069 = node;
-var map__53069__$1 = (((((!((map__53069 == null))))?(((((map__53069.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__53069.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__53069):map__53069);
-var children = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__53069__$1,new cljs.core.Keyword("block","children","block/children",-1040716209));
-var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__53069__$1,new cljs.core.Keyword("node","title","node/title",628940777));
-return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(cljs.core.truth_(title)?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),title], null):new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"color","color",1011675173),"lightgray"], null)], null),"Untitled"], null)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var iter__4582__auto__ = (function athens$devcards$node_page$node_page_el_$_iter__53071(s__53072){
+var map__52299 = node;
+var map__52299__$1 = (((((!((map__52299 == null))))?(((((map__52299.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__52299.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__52299):map__52299);
+var children = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__52299__$1,new cljs.core.Keyword("block","children","block/children",-1040716209));
+var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__52299__$1,new cljs.core.Keyword("node","title","node/title",628940777));
+return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.node_page.title_component,title], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var iter__4582__auto__ = (function athens$devcards$node_page$node_page_el_$_iter__52301(s__52302){
 return (new cljs.core.LazySeq(null,(function (){
-var s__53072__$1 = s__53072;
+var s__52302__$1 = s__52302;
 while(true){
-var temp__5735__auto__ = cljs.core.seq(s__53072__$1);
+var temp__5735__auto__ = cljs.core.seq(s__52302__$1);
 if(temp__5735__auto__){
-var s__53072__$2 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__53072__$2)){
-var c__4580__auto__ = cljs.core.chunk_first(s__53072__$2);
+var s__52302__$2 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__52302__$2)){
+var c__4580__auto__ = cljs.core.chunk_first(s__52302__$2);
 var size__4581__auto__ = cljs.core.count(c__4580__auto__);
-var b__53074 = cljs.core.chunk_buffer(size__4581__auto__);
-if((function (){var i__53073 = (0);
+var b__52304 = cljs.core.chunk_buffer(size__4581__auto__);
+if((function (){var i__52303 = (0);
 while(true){
-if((i__53073 < size__4581__auto__)){
-var child = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__53073);
-cljs.core.chunk_append(b__53074,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.blocks.block_el,child], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("db","id","db/id",-1388397098).cljs$core$IFn$_invoke$arity$1(child)], null)));
+if((i__52303 < size__4581__auto__)){
+var child = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__52303);
+cljs.core.chunk_append(b__52304,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.blocks.block_el,child], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("db","id","db/id",-1388397098).cljs$core$IFn$_invoke$arity$1(child)], null)));
 
-var G__53095 = (i__53073 + (1));
-i__53073 = G__53095;
+var G__52322 = (i__52303 + (1));
+i__52303 = G__52322;
 continue;
 } else {
 return true;
@@ -41,13 +58,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__53074),athens$devcards$node_page$node_page_el_$_iter__53071(cljs.core.chunk_rest(s__53072__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__52304),athens$devcards$node_page$node_page_el_$_iter__52301(cljs.core.chunk_rest(s__52302__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__53074),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__52304),null);
 }
 } else {
-var child = cljs.core.first(s__53072__$2);
-return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.blocks.block_el,child], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("db","id","db/id",-1388397098).cljs$core$IFn$_invoke$arity$1(child)], null)),athens$devcards$node_page$node_page_el_$_iter__53071(cljs.core.rest(s__53072__$2)));
+var child = cljs.core.first(s__52302__$2);
+return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.blocks.block_el,child], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.Keyword("db","id","db/id",-1388397098).cljs$core$IFn$_invoke$arity$1(child)], null)),athens$devcards$node_page$node_page_el_$_iter__52301(cljs.core.rest(s__52302__$2)));
 }
 } else {
 return null;
@@ -57,25 +74,25 @@ break;
 }),null,null));
 });
 return iter__4582__auto__(children);
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),"Linked References"], null),(function (){var iter__4582__auto__ = (function athens$devcards$node_page$node_page_el_$_iter__53075(s__53076){
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),"Linked References"], null),(function (){var iter__4582__auto__ = (function athens$devcards$node_page$node_page_el_$_iter__52305(s__52306){
 return (new cljs.core.LazySeq(null,(function (){
-var s__53076__$1 = s__53076;
+var s__52306__$1 = s__52306;
 while(true){
-var temp__5735__auto__ = cljs.core.seq(s__53076__$1);
+var temp__5735__auto__ = cljs.core.seq(s__52306__$1);
 if(temp__5735__auto__){
-var s__53076__$2 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__53076__$2)){
-var c__4580__auto__ = cljs.core.chunk_first(s__53076__$2);
+var s__52306__$2 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__52306__$2)){
+var c__4580__auto__ = cljs.core.chunk_first(s__52306__$2);
 var size__4581__auto__ = cljs.core.count(c__4580__auto__);
-var b__53078 = cljs.core.chunk_buffer(size__4581__auto__);
-if((function (){var i__53077 = (0);
+var b__52308 = cljs.core.chunk_buffer(size__4581__auto__);
+if((function (){var i__52307 = (0);
 while(true){
-if((i__53077 < size__4581__auto__)){
-var ref = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__53077);
-cljs.core.chunk_append(b__53078,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)));
+if((i__52307 < size__4581__auto__)){
+var ref = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__52307);
+cljs.core.chunk_append(b__52308,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)));
 
-var G__53096 = (i__53077 + (1));
-i__53077 = G__53096;
+var G__52323 = (i__52307 + (1));
+i__52307 = G__52323;
 continue;
 } else {
 return true;
@@ -83,13 +100,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__53078),athens$devcards$node_page$node_page_el_$_iter__53075(cljs.core.chunk_rest(s__53076__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__52308),athens$devcards$node_page$node_page_el_$_iter__52305(cljs.core.chunk_rest(s__52306__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__53078),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__52308),null);
 }
 } else {
-var ref = cljs.core.first(s__53076__$2);
-return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)),athens$devcards$node_page$node_page_el_$_iter__53075(cljs.core.rest(s__53076__$2)));
+var ref = cljs.core.first(s__52306__$2);
+return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)),athens$devcards$node_page$node_page_el_$_iter__52305(cljs.core.rest(s__52306__$2)));
 }
 } else {
 return null;
@@ -99,25 +116,25 @@ break;
 }),null,null));
 });
 return iter__4582__auto__(linked_refs);
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),"Unlinked References"], null),(function (){var iter__4582__auto__ = (function athens$devcards$node_page$node_page_el_$_iter__53079(s__53080){
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),"Unlinked References"], null),(function (){var iter__4582__auto__ = (function athens$devcards$node_page$node_page_el_$_iter__52309(s__52310){
 return (new cljs.core.LazySeq(null,(function (){
-var s__53080__$1 = s__53080;
+var s__52310__$1 = s__52310;
 while(true){
-var temp__5735__auto__ = cljs.core.seq(s__53080__$1);
+var temp__5735__auto__ = cljs.core.seq(s__52310__$1);
 if(temp__5735__auto__){
-var s__53080__$2 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__53080__$2)){
-var c__4580__auto__ = cljs.core.chunk_first(s__53080__$2);
+var s__52310__$2 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__52310__$2)){
+var c__4580__auto__ = cljs.core.chunk_first(s__52310__$2);
 var size__4581__auto__ = cljs.core.count(c__4580__auto__);
-var b__53082 = cljs.core.chunk_buffer(size__4581__auto__);
-if((function (){var i__53081 = (0);
+var b__52312 = cljs.core.chunk_buffer(size__4581__auto__);
+if((function (){var i__52311 = (0);
 while(true){
-if((i__53081 < size__4581__auto__)){
-var ref = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__53081);
-cljs.core.chunk_append(b__53082,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)));
+if((i__52311 < size__4581__auto__)){
+var ref = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__52311);
+cljs.core.chunk_append(b__52312,cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)));
 
-var G__53097 = (i__53081 + (1));
-i__53081 = G__53097;
+var G__52324 = (i__52311 + (1));
+i__52311 = G__52324;
 continue;
 } else {
 return true;
@@ -125,13 +142,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__53082),athens$devcards$node_page$node_page_el_$_iter__53079(cljs.core.chunk_rest(s__53080__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__52312),athens$devcards$node_page$node_page_el_$_iter__52309(cljs.core.chunk_rest(s__52310__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__53082),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__52312),null);
 }
 } else {
-var ref = cljs.core.first(s__53080__$2);
-return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)),athens$devcards$node_page$node_page_el_$_iter__53079(cljs.core.rest(s__53080__$2)));
+var ref = cljs.core.first(s__52310__$2);
+return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),ref], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),ref], null)),athens$devcards$node_page$node_page_el_$_iter__52309(cljs.core.rest(s__52310__$2)));
 }
 } else {
 return null;
@@ -153,91 +170,22 @@ var title = new cljs.core.Keyword("node","title","node/title",628940777).cljs$co
 if(clojure.string.blank_QMARK_(title)){
 return null;
 } else {
-var linked_ref_entids = cljs.core.deref((function (){var G__53083 = athens.db.q_refs;
-var G__53084 = athens.db.dsdb;
-var G__53085 = athens.patterns.linked(title);
-return (posh.reagent.q.cljs$core$IFn$_invoke$arity$3 ? posh.reagent.q.cljs$core$IFn$_invoke$arity$3(G__53083,G__53084,G__53085) : posh.reagent.q.call(null,G__53083,G__53084,G__53085));
+var linked_ref_entids = cljs.core.deref((function (){var G__52313 = athens.db.q_refs;
+var G__52314 = athens.db.dsdb;
+var G__52315 = athens.patterns.linked(title);
+return (posh.reagent.q.cljs$core$IFn$_invoke$arity$3 ? posh.reagent.q.cljs$core$IFn$_invoke$arity$3(G__52313,G__52314,G__52315) : posh.reagent.q.call(null,G__52313,G__52314,G__52315));
 })());
-var unlinked_ref_entids = cljs.core.deref((function (){var G__53086 = athens.db.q_refs;
-var G__53087 = athens.db.dsdb;
-var G__53088 = athens.patterns.unlinked(title);
-return (posh.reagent.q.cljs$core$IFn$_invoke$arity$3 ? posh.reagent.q.cljs$core$IFn$_invoke$arity$3(G__53086,G__53087,G__53088) : posh.reagent.q.call(null,G__53086,G__53087,G__53088));
+var unlinked_ref_entids = cljs.core.deref((function (){var G__52316 = athens.db.q_refs;
+var G__52317 = athens.db.dsdb;
+var G__52318 = athens.patterns.unlinked(title);
+return (posh.reagent.q.cljs$core$IFn$_invoke$arity$3 ? posh.reagent.q.cljs$core$IFn$_invoke$arity$3(G__52316,G__52317,G__52318) : posh.reagent.q.call(null,G__52316,G__52317,G__52318));
 })());
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.node_page.node_page_el,node,linked_ref_entids,unlinked_ref_entids], null);
 }
 });
-devcards.core.register_card(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"athens.devcards.node_page","athens.devcards.node_page",-728487734),new cljs.core.Keyword(null,"Import-Styles","Import-Styles",584958882)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
-return devcards.core.card_base(new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"Import-Styles",new cljs.core.Keyword(null,"documentation","documentation",1889593999),null,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
-if((typeof athens !== 'undefined') && (typeof athens.devcards !== 'undefined') && (typeof athens.devcards.node_page !== 'undefined') && (typeof athens.devcards.node_page.t_athens$devcards$node_page53089 !== 'undefined')){
-} else {
-
-/**
-* @constructor
- * @implements {cljs.core.IMeta}
- * @implements {cljs.core.IWithMeta}
- * @implements {devcards.core.IDevcardOptions}
-*/
-athens.devcards.node_page.t_athens$devcards$node_page53089 = (function (meta53090){
-this.meta53090 = meta53090;
-this.cljs$lang$protocol_mask$partition0$ = 393216;
-this.cljs$lang$protocol_mask$partition1$ = 0;
-});
-(athens.devcards.node_page.t_athens$devcards$node_page53089.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_53091,meta53090__$1){
-var self__ = this;
-var _53091__$1 = this;
-return (new athens.devcards.node_page.t_athens$devcards$node_page53089(meta53090__$1));
-}));
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_53091){
-var self__ = this;
-var _53091__$1 = this;
-return self__.meta53090;
-}));
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.prototype.devcards$core$IDevcardOptions$ = cljs.core.PROTOCOL_SENTINEL);
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__48148__auto__,devcard_opts__48149__auto__){
-var self__ = this;
-var this__48148__auto____$1 = this;
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(devcard_opts__48149__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__48167__auto__ = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.style.base_styles], null);
-if(cljs.core.fn_QMARK_(v__48167__auto__)){
-return (function (data_atom__48168__auto__,owner__48169__auto__){
-return reagent.core.as_element(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [v__48167__auto__,data_atom__48168__auto__,owner__48169__auto__], null));
-});
-} else {
-return reagent.core.as_element(v__48167__auto__);
-}
-})(),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map(new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__48149__auto__))], 0))], 0));
-}));
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta53090","meta53090",-417645585,null)], null);
-}));
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.cljs$lang$type = true);
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.cljs$lang$ctorStr = "athens.devcards.node-page/t_athens$devcards$node_page53089");
-
-(athens.devcards.node_page.t_athens$devcards$node_page53089.cljs$lang$ctorPrWriter = (function (this__4428__auto__,writer__4429__auto__,opt__4430__auto__){
-return cljs.core._write(writer__4429__auto__,"athens.devcards.node-page/t_athens$devcards$node_page53089");
-}));
-
-/**
- * Positional factory function for athens.devcards.node-page/t_athens$devcards$node_page53089.
- */
-athens.devcards.node_page.__GT_t_athens$devcards$node_page53089 = (function athens$devcards$node_page$__GT_t_athens$devcards$node_page53089(meta53090){
-return (new athens.devcards.node_page.t_athens$devcards$node_page53089(meta53090));
-});
-
-}
-
-return (new athens.devcards.node_page.t_athens$devcards$node_page53089(null));
-})()
-,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),null,new cljs.core.Keyword(null,"options","options",99638489),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watch-atom","watch-atom",-2134031308),false], null)], null));
-})], null));
 devcards.core.register_card(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"athens.devcards.node_page","athens.devcards.node_page",-728487734),new cljs.core.Keyword(null,"Node-Page","Node-Page",2010568893)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
 return devcards.core.card_base(new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"Node-Page",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"pull entity 4093: \"Hyperlink\" page",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
-if((typeof athens !== 'undefined') && (typeof athens.devcards !== 'undefined') && (typeof athens.devcards.node_page !== 'undefined') && (typeof athens.devcards.node_page.t_athens$devcards$node_page53092 !== 'undefined')){
+if((typeof athens !== 'undefined') && (typeof athens.devcards !== 'undefined') && (typeof athens.devcards.node_page !== 'undefined') && (typeof athens.devcards.node_page.t_athens$devcards$node_page52319 !== 'undefined')){
 } else {
 
 /**
@@ -246,61 +194,61 @@ if((typeof athens !== 'undefined') && (typeof athens.devcards !== 'undefined') &
  * @implements {cljs.core.IWithMeta}
  * @implements {devcards.core.IDevcardOptions}
 */
-athens.devcards.node_page.t_athens$devcards$node_page53092 = (function (meta53093){
-this.meta53093 = meta53093;
+athens.devcards.node_page.t_athens$devcards$node_page52319 = (function (meta52320){
+this.meta52320 = meta52320;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 });
-(athens.devcards.node_page.t_athens$devcards$node_page53092.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_53094,meta53093__$1){
+(athens.devcards.node_page.t_athens$devcards$node_page52319.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_52321,meta52320__$1){
 var self__ = this;
-var _53094__$1 = this;
-return (new athens.devcards.node_page.t_athens$devcards$node_page53092(meta53093__$1));
+var _52321__$1 = this;
+return (new athens.devcards.node_page.t_athens$devcards$node_page52319(meta52320__$1));
 }));
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_53094){
+(athens.devcards.node_page.t_athens$devcards$node_page52319.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_52321){
 var self__ = this;
-var _53094__$1 = this;
-return self__.meta53093;
+var _52321__$1 = this;
+return self__.meta52320;
 }));
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.prototype.devcards$core$IDevcardOptions$ = cljs.core.PROTOCOL_SENTINEL);
+(athens.devcards.node_page.t_athens$devcards$node_page52319.prototype.devcards$core$IDevcardOptions$ = cljs.core.PROTOCOL_SENTINEL);
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__48148__auto__,devcard_opts__48149__auto__){
+(athens.devcards.node_page.t_athens$devcards$node_page52319.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__46449__auto__,devcard_opts__46450__auto__){
 var self__ = this;
-var this__48148__auto____$1 = this;
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(devcard_opts__48149__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__48167__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.node_page.node_page_component,(4093)], null);
-if(cljs.core.fn_QMARK_(v__48167__auto__)){
-return (function (data_atom__48168__auto__,owner__48169__auto__){
-return reagent.core.as_element(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [v__48167__auto__,data_atom__48168__auto__,owner__48169__auto__], null));
+var this__46449__auto____$1 = this;
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(devcard_opts__46450__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__46468__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.devcards.node_page.node_page_component,(4093)], null);
+if(cljs.core.fn_QMARK_(v__46468__auto__)){
+return (function (data_atom__46469__auto__,owner__46470__auto__){
+return reagent.core.as_element(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [v__46468__auto__,data_atom__46469__auto__,owner__46470__auto__], null));
 });
 } else {
-return reagent.core.as_element(v__48167__auto__);
+return reagent.core.as_element(v__46468__auto__);
 }
-})(),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map(new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__48149__auto__))], 0))], 0));
+})(),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map(new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__46450__auto__))], 0))], 0));
 }));
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta53093","meta53093",-1350170406,null)], null);
+(athens.devcards.node_page.t_athens$devcards$node_page52319.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta52320","meta52320",1031919601,null)], null);
 }));
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.cljs$lang$type = true);
+(athens.devcards.node_page.t_athens$devcards$node_page52319.cljs$lang$type = true);
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.cljs$lang$ctorStr = "athens.devcards.node-page/t_athens$devcards$node_page53092");
+(athens.devcards.node_page.t_athens$devcards$node_page52319.cljs$lang$ctorStr = "athens.devcards.node-page/t_athens$devcards$node_page52319");
 
-(athens.devcards.node_page.t_athens$devcards$node_page53092.cljs$lang$ctorPrWriter = (function (this__4428__auto__,writer__4429__auto__,opt__4430__auto__){
-return cljs.core._write(writer__4429__auto__,"athens.devcards.node-page/t_athens$devcards$node_page53092");
+(athens.devcards.node_page.t_athens$devcards$node_page52319.cljs$lang$ctorPrWriter = (function (this__4428__auto__,writer__4429__auto__,opt__4430__auto__){
+return cljs.core._write(writer__4429__auto__,"athens.devcards.node-page/t_athens$devcards$node_page52319");
 }));
 
 /**
- * Positional factory function for athens.devcards.node-page/t_athens$devcards$node_page53092.
+ * Positional factory function for athens.devcards.node-page/t_athens$devcards$node_page52319.
  */
-athens.devcards.node_page.__GT_t_athens$devcards$node_page53092 = (function athens$devcards$node_page$__GT_t_athens$devcards$node_page53092(meta53093){
-return (new athens.devcards.node_page.t_athens$devcards$node_page53092(meta53093));
+athens.devcards.node_page.__GT_t_athens$devcards$node_page52319 = (function athens$devcards$node_page$__GT_t_athens$devcards$node_page52319(meta52320){
+return (new athens.devcards.node_page.t_athens$devcards$node_page52319(meta52320));
 });
 
 }
 
-return (new athens.devcards.node_page.t_athens$devcards$node_page53092(null));
+return (new athens.devcards.node_page.t_athens$devcards$node_page52319(null));
 })()
 ,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),null,new cljs.core.Keyword(null,"options","options",99638489),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watch-atom","watch-atom",-2134031308),false], null)], null));
 })], null));
