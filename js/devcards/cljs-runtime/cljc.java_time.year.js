@@ -56,8 +56,8 @@ cljc.java_time.year.is_before = (function cljc$java_time$year$is_before(this4517
 return this4517.isBefore(java_time_Year4518);
 });
 cljc.java_time.year.minus = (function cljc$java_time$year$minus(var_args){
-var G__50647 = arguments.length;
-switch (G__50647) {
+var G__50646 = arguments.length;
+switch (G__50646) {
 case 2:
 return cljc.java_time.year.minus.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -173,8 +173,8 @@ return this4550.with(G__4551,G__4552);
 (cljc.java_time.year.with$.cljs$lang$maxFixedArity = 3);
 
 cljc.java_time.year.now = (function cljc$java_time$year$now(var_args){
-var G__50655 = arguments.length;
-switch (G__50655) {
+var G__50654 = arguments.length;
+switch (G__50654) {
 case 0:
 return cljc.java_time.year.now.cljs$core$IFn$_invoke$arity$0();
 

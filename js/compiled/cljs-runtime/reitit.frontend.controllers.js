@@ -55,13 +55,13 @@ var b__57791 = cljs.core.chunk_buffer(size__4581__auto__);
 if((function (){var i__57790 = (0);
 while(true){
 if((i__57790 < size__4581__auto__)){
-var vec__57793 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__57790);
-var param_type = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__57793,(0),null);
-var ks = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__57793,(1),null);
+var vec__57792 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__57790);
+var param_type = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__57792,(0),null);
+var ks = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__57792,(1),null);
 cljs.core.chunk_append(b__57791,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [param_type,cljs.core.select_keys(cljs.core.get.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"parameters","parameters",-1229919748).cljs$core$IFn$_invoke$arity$1(match),param_type),ks)], null));
 
-var G__57811 = (i__57790 + (1));
-i__57790 = G__57811;
+var G__57810 = (i__57790 + (1));
+i__57790 = G__57810;
 continue;
 } else {
 return true;
@@ -221,18 +221,18 @@ count__57807_57836 = G__57848;
 i__57808_57837 = G__57849;
 continue;
 } else {
-var controller_57850 = cljs.core.first(seq__57805_57844__$1);
-reitit.frontend.controllers.apply_controller(controller_57850,new cljs.core.Keyword(null,"start","start",-355208981));
+var controller_57851 = cljs.core.first(seq__57805_57844__$1);
+reitit.frontend.controllers.apply_controller(controller_57851,new cljs.core.Keyword(null,"start","start",-355208981));
 
 
-var G__57851 = cljs.core.next(seq__57805_57844__$1);
-var G__57852 = null;
-var G__57853 = (0);
+var G__57852 = cljs.core.next(seq__57805_57844__$1);
+var G__57853 = null;
 var G__57854 = (0);
-seq__57805_57834 = G__57851;
-chunk__57806_57835 = G__57852;
-count__57807_57836 = G__57853;
-i__57808_57837 = G__57854;
+var G__57855 = (0);
+seq__57805_57834 = G__57852;
+chunk__57806_57835 = G__57853;
+count__57807_57836 = G__57854;
+i__57808_57837 = G__57855;
 continue;
 }
 } else {

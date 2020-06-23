@@ -104,14 +104,14 @@ if(cljs.core.truth_(temp__5733__auto____$1)){
 var dm = temp__5733__auto____$1;
 return (dm.cljs$core$IFn$_invoke$arity$3 ? dm.cljs$core$IFn$_invoke$arity$3(rdr,ch,opts) : dm.call(null,rdr,ch,opts));
 } else {
-var temp__5733__auto____$2 = (function (){var G__24866 = (function (){var G__24869 = rdr;
-cljs.tools.reader.reader_types.unread(G__24869,ch);
+var temp__5733__auto____$2 = (function (){var G__24865 = (function (){var G__24868 = rdr;
+cljs.tools.reader.reader_types.unread(G__24868,ch);
 
-return G__24869;
+return G__24868;
 })();
-var G__24867 = ch;
-var G__24868 = opts;
-return (cljs.tools.reader.edn.read_tagged.cljs$core$IFn$_invoke$arity$3 ? cljs.tools.reader.edn.read_tagged.cljs$core$IFn$_invoke$arity$3(G__24866,G__24867,G__24868) : cljs.tools.reader.edn.read_tagged.call(null,G__24866,G__24867,G__24868));
+var G__24866 = ch;
+var G__24867 = opts;
+return (cljs.tools.reader.edn.read_tagged.cljs$core$IFn$_invoke$arity$3 ? cljs.tools.reader.edn.read_tagged.cljs$core$IFn$_invoke$arity$3(G__24865,G__24866,G__24867) : cljs.tools.reader.edn.read_tagged.call(null,G__24865,G__24866,G__24867));
 })();
 if(cljs.core.truth_(temp__5733__auto____$2)){
 var obj = temp__5733__auto____$2;
@@ -161,10 +161,10 @@ var d = cljs.tools.reader.impl.utils.char_code(cljs.core.nth.cljs$core$IFn$_invo
 if((d === (-1))){
 return cljs.tools.reader.impl.errors.throw_invalid_unicode_digit_in_token(null,cljs.core.nth.cljs$core$IFn$_invoke$arity$2(token,i),token);
 } else {
-var G__24932 = (i + (1));
-var G__24933 = (d + (uc * base));
-i = G__24932;
-uc = G__24933;
+var G__24931 = (i + (1));
+var G__24932 = (d + (uc * base));
+i = G__24931;
+uc = G__24932;
 continue;
 }
 }
@@ -314,8 +314,8 @@ var temp__5733__auto__ = (cljs.tools.reader.edn.macros.cljs$core$IFn$_invoke$ari
 if(cljs.core.truth_(temp__5733__auto__)){
 var macrofn = temp__5733__auto__;
 var mret = (macrofn.cljs$core$IFn$_invoke$arity$3 ? macrofn.cljs$core$IFn$_invoke$arity$3(rdr,ch,opts) : macrofn.call(null,rdr,ch,opts));
-var G__24937 = (((!((mret === rdr))))?cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(a,mret):a);
-a = G__24937;
+var G__24936 = (((!((mret === rdr))))?cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(a,mret):a);
+a = G__24936;
 continue;
 } else {
 var o = (function (){var G__24884 = (function (){var G__24888 = rdr;
@@ -401,14 +401,14 @@ return or__4185__auto__;
 return cljs.tools.reader.impl.errors.throw_invalid_number(rdr,s);
 }
 } else {
-var G__24939 = (function (){var G__24893 = sb;
+var G__24940 = (function (){var G__24893 = sb;
 G__24893.append(ch);
 
 return G__24893;
 })();
-var G__24940 = cljs.tools.reader.reader_types.read_char(rdr);
-sb = G__24939;
-ch = G__24940;
+var G__24941 = cljs.tools.reader.reader_types.read_char(rdr);
+sb = G__24940;
+ch = G__24941;
 continue;
 }
 break;
@@ -478,14 +478,14 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__24895)){
 return cljs.tools.reader.impl.errors.throw_eof_reading.cljs$core$IFn$_invoke$arity$variadic(rdr,new cljs.core.Keyword(null,"string","string",-1989541586),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["\"",sb], 0));
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("\\",G__24895)){
-var G__24943 = (function (){var G__24896 = sb;
+var G__24944 = (function (){var G__24896 = sb;
 G__24896.append(cljs.tools.reader.edn.escape_char(sb,rdr));
 
 return G__24896;
 })();
-var G__24944 = cljs.tools.reader.reader_types.read_char(rdr);
-sb = G__24943;
-ch = G__24944;
+var G__24945 = cljs.tools.reader.reader_types.read_char(rdr);
+sb = G__24944;
+ch = G__24945;
 continue;
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("\"",G__24895)){
@@ -802,8 +802,8 @@ return cljs.tools.reader.impl.errors.throw_unknown_reader_tag(rdr,tag);
  *            be called with the tag and the value.
  */
 cljs.tools.reader.edn.read = (function cljs$tools$reader$edn$read(var_args){
-var G__24919 = arguments.length;
-switch (G__24919) {
+var G__24915 = arguments.length;
+switch (G__24915) {
 case 1:
 return cljs.tools.reader.edn.read.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 

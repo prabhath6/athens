@@ -80,9 +80,9 @@ var tag = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40171__$1,new cljs.co
 var chunk = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40171__$1,new cljs.core.Keyword(null,"chunk","chunk",-1191159620));
 var size = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40171__$1,new cljs.core.Keyword(null,"size","size",1098693007));
 var G__40197 = cljs.core.subs.cljs$core$IFn$_invoke$arity$2(s1,size);
-var G__40198 = [s2,cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__40175 = tag;
-var G__40175__$1 = (((G__40175 instanceof cljs.core.Keyword))?G__40175.fqn:null);
-switch (G__40175__$1) {
+var G__40198 = [s2,cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var G__40174 = tag;
+var G__40174__$1 = (((G__40174 instanceof cljs.core.Keyword))?G__40174.fqn:null);
+switch (G__40174__$1) {
 case "string":
 return chunk;
 
