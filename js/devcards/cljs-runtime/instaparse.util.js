@@ -2,14 +2,14 @@ goog.provide('instaparse.util');
 goog.require('cljs.core');
 instaparse.util.throw_runtime_exception = (function instaparse$util$throw_runtime_exception(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___41951 = arguments.length;
-var i__4790__auto___41952 = (0);
+var len__4789__auto___55961 = arguments.length;
+var i__4790__auto___55962 = (0);
 while(true){
-if((i__4790__auto___41952 < len__4789__auto___41951)){
-args__4795__auto__.push((arguments[i__4790__auto___41952]));
+if((i__4790__auto___55962 < len__4789__auto___55961)){
+args__4795__auto__.push((arguments[i__4790__auto___55962]));
 
-var G__41953 = (i__4790__auto___41952 + (1));
-i__4790__auto___41952 = G__41953;
+var G__55963 = (i__4790__auto___55962 + (1));
+i__4790__auto___55962 = G__55963;
 continue;
 } else {
 }
@@ -28,21 +28,21 @@ throw text;
 (instaparse.util.throw_runtime_exception.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(instaparse.util.throw_runtime_exception.cljs$lang$applyTo = (function (seq41942){
+(instaparse.util.throw_runtime_exception.cljs$lang$applyTo = (function (seq55958){
 var self__4777__auto__ = this;
-return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq41942));
+return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq55958));
 }));
 
 instaparse.util.throw_illegal_argument_exception = (function instaparse$util$throw_illegal_argument_exception(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___41954 = arguments.length;
-var i__4790__auto___41955 = (0);
+var len__4789__auto___55964 = arguments.length;
+var i__4790__auto___55965 = (0);
 while(true){
-if((i__4790__auto___41955 < len__4789__auto___41954)){
-args__4795__auto__.push((arguments[i__4790__auto___41955]));
+if((i__4790__auto___55965 < len__4789__auto___55964)){
+args__4795__auto__.push((arguments[i__4790__auto___55965]));
 
-var G__41956 = (i__4790__auto___41955 + (1));
-i__4790__auto___41955 = G__41956;
+var G__55966 = (i__4790__auto___55965 + (1));
+i__4790__auto___55965 = G__55966;
 continue;
 } else {
 }
@@ -61,19 +61,19 @@ throw text;
 (instaparse.util.throw_illegal_argument_exception.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(instaparse.util.throw_illegal_argument_exception.cljs$lang$applyTo = (function (seq41946){
+(instaparse.util.throw_illegal_argument_exception.cljs$lang$applyTo = (function (seq55959){
 var self__4777__auto__ = this;
-return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq41946));
+return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq55959));
 }));
 
 instaparse.util.regexp_flags = (function instaparse$util$regexp_flags(re){
-var G__41950 = "";
-var G__41950__$1 = (cljs.core.truth_(re.ignoreCase)?[G__41950,"i"].join(''):G__41950);
-var G__41950__$2 = (cljs.core.truth_(re.multiline)?[G__41950__$1,"m"].join(''):G__41950__$1);
+var G__55960 = "";
+var G__55960__$1 = (cljs.core.truth_(re.ignoreCase)?[G__55960,"i"].join(''):G__55960);
+var G__55960__$2 = (cljs.core.truth_(re.multiline)?[G__55960__$1,"m"].join(''):G__55960__$1);
 if(cljs.core.truth_(re.unicode)){
-return [G__41950__$2,"u"].join('');
+return [G__55960__$2,"u"].join('');
 } else {
-return G__41950__$2;
+return G__55960__$2;
 }
 });
 
