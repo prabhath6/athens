@@ -10,14 +10,14 @@ goog.require('devtools.formatters.core');
 goog.require('day8.re_frame_10x.svgs');
 var module$node_modules$react_highlight_DOT_js$dist$main=shadow.js.require("module$node_modules$react_highlight_DOT_js$dist$main", {});
 var module$node_modules$highlight_DOT_js$lib$languages$clojure=shadow.js.require("module$node_modules$highlight_DOT_js$lib$languages$clojure", {});
-day8.re_frame_10x.view.components.search_input = (function day8$re_frame_10x$view$components$search_input(p__28441){
-var map__28442 = p__28441;
-var map__28442__$1 = (((((!((map__28442 == null))))?(((((map__28442.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__28442.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__28442):map__28442);
-var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28442__$1,new cljs.core.Keyword(null,"title","title",636505583));
-var placeholder = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28442__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
-var on_save = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28442__$1,new cljs.core.Keyword(null,"on-save","on-save",1618176266));
-var on_change = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28442__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
-var on_stop = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28442__$1,new cljs.core.Keyword(null,"on-stop","on-stop",1520114515));
+day8.re_frame_10x.view.components.search_input = (function day8$re_frame_10x$view$components$search_input(p__28444){
+var map__28445 = p__28444;
+var map__28445__$1 = (((((!((map__28445 == null))))?(((((map__28445.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__28445.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__28445):map__28445);
+var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28445__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var placeholder = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28445__$1,new cljs.core.Keyword(null,"placeholder","placeholder",-104873083));
+var on_save = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28445__$1,new cljs.core.Keyword(null,"on-save","on-save",1618176266));
+var on_change = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28445__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
+var on_stop = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28445__$1,new cljs.core.Keyword(null,"on-stop","on-stop",1520114515));
 var val = day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.core.atom.cljs$core$IFn$_invoke$arity$1(title);
 var save = (function (){
 var v = clojure.string.trim(cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(val)));
@@ -150,13 +150,13 @@ return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq
 day8.re_frame_10x.view.components.cljs_devtools_body = (function day8$re_frame_10x$view$components$cljs_devtools_body(var_args){
 var args__4795__auto__ = [];
 var len__4789__auto___28491 = arguments.length;
-var i__4790__auto___28492 = (0);
+var i__4790__auto___28493 = (0);
 while(true){
-if((i__4790__auto___28492 < len__4789__auto___28491)){
-args__4795__auto__.push((arguments[i__4790__auto___28492]));
+if((i__4790__auto___28493 < len__4789__auto___28491)){
+args__4795__auto__.push((arguments[i__4790__auto___28493]));
 
-var G__28493 = (i__4790__auto___28492 + (1));
-i__4790__auto___28492 = G__28493;
+var G__28496 = (i__4790__auto___28493 + (1));
+i__4790__auto___28493 = G__28496;
 continue;
 } else {
 }
@@ -182,13 +182,13 @@ return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq
 day8.re_frame_10x.view.components.cljs_devtools_has_body = (function day8$re_frame_10x$view$components$cljs_devtools_has_body(var_args){
 var args__4795__auto__ = [];
 var len__4789__auto___28497 = arguments.length;
-var i__4790__auto___28498 = (0);
+var i__4790__auto___28499 = (0);
 while(true){
-if((i__4790__auto___28498 < len__4789__auto___28497)){
-args__4795__auto__.push((arguments[i__4790__auto___28498]));
+if((i__4790__auto___28499 < len__4789__auto___28497)){
+args__4795__auto__.push((arguments[i__4790__auto___28499]));
 
-var G__28499 = (i__4790__auto___28498 + (1));
-i__4790__auto___28498 = G__28499;
+var G__28500 = (i__4790__auto___28499 + (1));
+i__4790__auto___28499 = G__28500;
 continue;
 } else {
 }

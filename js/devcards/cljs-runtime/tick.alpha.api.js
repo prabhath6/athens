@@ -977,14 +977,14 @@ return tick.interval.new_interval(x,y);
 });
 tick.alpha.api.extend = (function tick$alpha$api$extend(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___55623 = arguments.length;
-var i__4790__auto___55624 = (0);
+var len__4789__auto___55624 = arguments.length;
+var i__4790__auto___55625 = (0);
 while(true){
-if((i__4790__auto___55624 < len__4789__auto___55623)){
-args__4795__auto__.push((arguments[i__4790__auto___55624]));
+if((i__4790__auto___55625 < len__4789__auto___55624)){
+args__4795__auto__.push((arguments[i__4790__auto___55625]));
 
-var G__55625 = (i__4790__auto___55624 + (1));
-i__4790__auto___55624 = G__55625;
+var G__55626 = (i__4790__auto___55625 + (1));
+i__4790__auto___55625 = G__55626;
 continue;
 } else {
 }
