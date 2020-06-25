@@ -125,8 +125,8 @@ cljc.java_time.local_date.length_of_month = (function cljc$java_time$local_date$
 return this3521.lengthOfMonth();
 });
 cljc.java_time.local_date.until = (function cljc$java_time$local_date$until(var_args){
-var G__50503 = arguments.length;
-switch (G__50503) {
+var G__50505 = arguments.length;
+switch (G__50505) {
 case 2:
 return cljc.java_time.local_date.until.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -176,8 +176,8 @@ cljc.java_time.local_date.get_chronology = (function cljc$java_time$local_date$g
 return this3538.chronology();
 });
 cljc.java_time.local_date.parse = (function cljc$java_time$local_date$parse(var_args){
-var G__50507 = arguments.length;
-switch (G__50507) {
+var G__50509 = arguments.length;
+switch (G__50509) {
 case 1:
 return cljc.java_time.local_date.parse.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -263,8 +263,8 @@ return java.time.LocalDate.now();
 (cljc.java_time.local_date.now.cljs$lang$maxFixedArity = 1);
 
 cljc.java_time.local_date.at_start_of_day = (function cljc$java_time$local_date$at_start_of_day(var_args){
-var G__50515 = arguments.length;
-switch (G__50515) {
+var G__50516 = arguments.length;
+switch (G__50516) {
 case 1:
 return cljc.java_time.local_date.at_start_of_day.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -311,8 +311,8 @@ cljc.java_time.local_date.equals = (function cljc$java_time$local_date$equals(th
 return this3565.equals(java_lang_Object3566);
 });
 cljc.java_time.local_date.at_time = (function cljc$java_time$local_date$at_time(var_args){
-var G__50519 = arguments.length;
-switch (G__50519) {
+var G__50521 = arguments.length;
+switch (G__50521) {
 case 2:
 return cljc.java_time.local_date.at_time.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 

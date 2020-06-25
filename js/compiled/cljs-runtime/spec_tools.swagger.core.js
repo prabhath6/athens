@@ -285,8 +285,8 @@ return x__$1;
  *   with the `spec-tools.swagger.core/expand` multimethod.
  */
 spec_tools.swagger.core.swagger_spec = (function spec_tools$swagger$core$swagger_spec(var_args){
-var G__56164 = arguments.length;
-switch (G__56164) {
+var G__56163 = arguments.length;
+switch (G__56163) {
 case 1:
 return spec_tools.swagger.core.swagger_spec.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 

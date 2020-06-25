@@ -60,12 +60,12 @@ goog.object.set(G__49993_50169,G__49994_50170,G__49995_50171);
 
 goog.object.set(reitit.core.Expand,"null",true);
 
-var G__49996_50172 = reitit.core.expand;
-var G__49997_50173 = "null";
-var G__49998_50174 = (function (_,___$1){
+var G__49996_50173 = reitit.core.expand;
+var G__49997_50174 = "null";
+var G__49998_50175 = (function (_,___$1){
 return null;
 });
-goog.object.set(G__49996_50172,G__49997_50173,G__49998_50174);
+goog.object.set(G__49996_50173,G__49997_50174,G__49998_50175);
 
 /**
  * @interface
@@ -1054,10 +1054,10 @@ return reitit.core.lookup_router.cljs$core$IFn$_invoke$arity$2(compiled_routes,c
 }));
 
 (reitit.core.lookup_router.cljs$core$IFn$_invoke$arity$2 = (function (compiled_routes,opts){
-var temp__5735__auto___50249 = cljs.core.seq(cljs.core.filter.cljs$core$IFn$_invoke$arity$2(reitit.impl.__GT_wild_route_QMARK_(opts),compiled_routes));
-if(temp__5735__auto___50249){
-var wilds_50254 = temp__5735__auto___50249;
-reitit.exception.fail_BANG_.cljs$core$IFn$_invoke$arity$2(["can't create :lookup-router with wildcard routes: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(wilds_50254)].join(''),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"wilds","wilds",132271223),wilds_50254,new cljs.core.Keyword(null,"routes","routes",457900162),compiled_routes], null));
+var temp__5735__auto___50237 = cljs.core.seq(cljs.core.filter.cljs$core$IFn$_invoke$arity$2(reitit.impl.__GT_wild_route_QMARK_(opts),compiled_routes));
+if(temp__5735__auto___50237){
+var wilds_50242 = temp__5735__auto___50237;
+reitit.exception.fail_BANG_.cljs$core$IFn$_invoke$arity$2(["can't create :lookup-router with wildcard routes: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(wilds_50242)].join(''),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"wilds","wilds",132271223),wilds_50242,new cljs.core.Keyword(null,"routes","routes",457900162),compiled_routes], null));
 } else {
 }
 

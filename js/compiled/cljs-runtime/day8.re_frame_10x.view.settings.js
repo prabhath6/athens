@@ -11,13 +11,13 @@ day8.re_frame_10x.view.settings.horizontal_gap = day8.re_frame_10x.common_styles
 day8.re_frame_10x.view.settings.vertical_gap = day8.re_frame_10x.common_styles.gs_12s;
 day8.re_frame_10x.view.settings.settings_box_vertical_padding = day8.re_frame_10x.common_styles.gs_7;
 day8.re_frame_10x.view.settings.settings_box_padding = day8.re_frame_10x.utils.re_com.css_join.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["7px","0"], 0));
-day8.re_frame_10x.view.settings.settings_box_81 = day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.compiler.render_css((function (){var G__28539 = day8.re_frame_10x.common_styles.gs_81;
-var G__28540 = (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2((2),day8.re_frame_10x.view.settings.settings_box_vertical_padding) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.call(null,(2),day8.re_frame_10x.view.settings.settings_box_vertical_padding));
-return (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2(G__28539,G__28540) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.call(null,G__28539,G__28540));
+day8.re_frame_10x.view.settings.settings_box_81 = day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.compiler.render_css((function (){var G__28538 = day8.re_frame_10x.common_styles.gs_81;
+var G__28539 = (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2((2),day8.re_frame_10x.view.settings.settings_box_vertical_padding) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.call(null,(2),day8.re_frame_10x.view.settings.settings_box_vertical_padding));
+return (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2(G__28538,G__28539) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.call(null,G__28538,G__28539));
 })());
-day8.re_frame_10x.view.settings.settings_box_131 = day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.compiler.render_css((function (){var G__28541 = day8.re_frame_10x.common_styles.gs_131;
-var G__28542 = (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2((2),day8.re_frame_10x.view.settings.settings_box_vertical_padding) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.call(null,(2),day8.re_frame_10x.view.settings.settings_box_vertical_padding));
-return (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2(G__28541,G__28542) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.call(null,G__28541,G__28542));
+day8.re_frame_10x.view.settings.settings_box_131 = day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.compiler.render_css((function (){var G__28540 = day8.re_frame_10x.common_styles.gs_131;
+var G__28541 = (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.cljs$core$IFn$_invoke$arity$2((2),day8.re_frame_10x.view.settings.settings_box_vertical_padding) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_STAR_.call(null,(2),day8.re_frame_10x.view.settings.settings_box_vertical_padding));
+return (day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2 ? day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.cljs$core$IFn$_invoke$arity$2(G__28540,G__28541) : day8.re_frame_10x.inlined_deps.garden.v1v3v9.garden.units.px_.call(null,G__28540,G__28541));
 })());
 day8.re_frame_10x.view.settings.settings_styles = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"#--re-frame-10x--","#--re-frame-10x--",-1788857107),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,".settings",".settings",1002597819),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"background-color","background-color",570434026),day8.re_frame_10x.common_styles.white_background_color], null)], null)], null);
 day8.re_frame_10x.view.settings.closeable_text_box = (function day8$re_frame_10x$view$settings$closeable_text_box(var_args){
@@ -40,22 +40,22 @@ var argseq__4796__auto__ = ((((0) < args__4795__auto__.length))?(new cljs.core.I
 return day8.re_frame_10x.view.settings.closeable_text_box.cljs$core$IFn$_invoke$arity$variadic(argseq__4796__auto__);
 });
 
-(day8.re_frame_10x.view.settings.closeable_text_box.cljs$core$IFn$_invoke$arity$variadic = (function (p__28544){
-var map__28545 = p__28544;
-var map__28545__$1 = (((((!((map__28545 == null))))?(((((map__28545.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__28545.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__28545):map__28545);
-var model = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28545__$1,new cljs.core.Keyword(null,"model","model",331153215));
-var width = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28545__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var on_close = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28545__$1,new cljs.core.Keyword(null,"on-close","on-close",-761178394));
-var on_change = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28545__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
+(day8.re_frame_10x.view.settings.closeable_text_box.cljs$core$IFn$_invoke$arity$variadic = (function (p__28543){
+var map__28544 = p__28543;
+var map__28544__$1 = (((((!((map__28544 == null))))?(((((map__28544.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__28544.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__28544):map__28544);
+var model = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28544__$1,new cljs.core.Keyword(null,"model","model",331153215));
+var width = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28544__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var on_close = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28544__$1,new cljs.core.Keyword(null,"on-close","on-close",-761178394));
+var on_change = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28544__$1,new cljs.core.Keyword(null,"on-change","on-change",-732046149));
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [day8.re_frame_10x.utils.re_com.h_box,new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [day8.re_frame_10x.utils.re_com.input_text,new cljs.core.Keyword(null,"width","width",-384071477),width,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"width","width",-384071477),width,new cljs.core.Keyword(null,"height","height",1025178622),"25px",new cljs.core.Keyword(null,"padding","padding",1660304693),day8.re_frame_10x.utils.re_com.css_join.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["0px",day8.re_frame_10x.common_styles.gs_5s], 0))], null),new cljs.core.Keyword(null,"model","model",331153215),model,new cljs.core.Keyword(null,"change-on-blur?","change-on-blur?",854283925),false,new cljs.core.Keyword(null,"on-change","on-change",-732046149),on_change], null),new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [day8.re_frame_10x.utils.re_com.close_button,new cljs.core.Keyword(null,"div-size","div-size",1661625995),(25),new cljs.core.Keyword(null,"font-size","font-size",-1847940346),(25),new cljs.core.Keyword(null,"top-offset","top-offset",1235816245),(-4),new cljs.core.Keyword(null,"left-offset","left-offset",-331155643),(10),new cljs.core.Keyword(null,"on-click","on-click",1632826543),on_close], null)], null)], null);
 }));
 
 (day8.re_frame_10x.view.settings.closeable_text_box.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(day8.re_frame_10x.view.settings.closeable_text_box.cljs$lang$applyTo = (function (seq28543){
+(day8.re_frame_10x.view.settings.closeable_text_box.cljs$lang$applyTo = (function (seq28542){
 var self__4777__auto__ = this;
-return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq28543));
+return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq28542));
 }));
 
 day8.re_frame_10x.view.settings.explanation_text = (function day8$re_frame_10x$view$settings$explanation_text(children){
@@ -191,8 +191,8 @@ return (day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.core.dispatch.c
 });})(i__28573,id,item,c__4580__auto__,size__4581__auto__,b__28574,s__28572__$2,temp__5735__auto__))
 ], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),id], null)));
 
-var G__28590 = (i__28573 + (1));
-i__28573 = G__28590;
+var G__28588 = (i__28573 + (1));
+i__28573 = G__28588;
 continue;
 } else {
 return true;
