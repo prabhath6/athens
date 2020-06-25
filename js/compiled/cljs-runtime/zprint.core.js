@@ -16,8 +16,8 @@ goog.require('rewrite_clj.parser');
  *   options-map values that will be merged into the internal options-map.
  */
 zprint.core.set_options_BANG_ = (function zprint$core$set_options_BANG_(var_args){
-var G__31815 = arguments.length;
-switch (G__31815) {
+var G__31814 = arguments.length;
+switch (G__31814) {
 case 2:
 return zprint.core.set_options_BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -234,9 +234,9 @@ return actual_options;
  */
 zprint.core.zprint_STAR_ = (function zprint$core$zprint_STAR_(coll,special_option,actual_options){
 if(cljs.core.truth_(special_option)){
-var G__31841 = special_option;
-var G__31841__$1 = (((G__31841 instanceof cljs.core.Keyword))?G__31841.fqn:null);
-switch (G__31841__$1) {
+var G__31839 = special_option;
+var G__31839__$1 = (((G__31839 instanceof cljs.core.Keyword))?G__31839.fqn:null);
+switch (G__31839__$1) {
 case "explain":
 return zprint.core.fzprint_style(zprint.config.get_explained_options(),zprint.config.merge_deep.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([zprint.config.get_default_options(),actual_options], 0)));
 

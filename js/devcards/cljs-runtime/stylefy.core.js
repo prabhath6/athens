@@ -61,8 +61,8 @@ goog.require('stylefy.impl.styles');
  * Options is an optional map, which contains HTML attributes (:class, :href, :src etc.).
  */
 stylefy.core.use_style = (function stylefy$core$use_style(var_args){
-var G__42161 = arguments.length;
-switch (G__42161) {
+var G__42149 = arguments.length;
+switch (G__42149) {
 case 1:
 return stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -107,8 +107,8 @@ return stylefy.impl.styles.use_style_BANG_(style,options,stylefy.impl.dom.save_s
  * take a look at sub-style function.
  */
 stylefy.core.use_sub_style = (function stylefy$core$use_sub_style(var_args){
-var G__42181 = arguments.length;
-switch (G__42181) {
+var G__42154 = arguments.length;
+switch (G__42154) {
 case 2:
 return stylefy.core.use_sub_style.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -276,14 +276,14 @@ return null;
  */
 stylefy.core.keyframes = (function stylefy$core$keyframes(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___42205 = arguments.length;
-var i__4790__auto___42206 = (0);
+var len__4789__auto___42194 = arguments.length;
+var i__4790__auto___42195 = (0);
 while(true){
-if((i__4790__auto___42206 < len__4789__auto___42205)){
-args__4795__auto__.push((arguments[i__4790__auto___42206]));
+if((i__4790__auto___42195 < len__4789__auto___42194)){
+args__4795__auto__.push((arguments[i__4790__auto___42195]));
 
-var G__42207 = (i__4790__auto___42206 + (1));
-i__4790__auto___42206 = G__42207;
+var G__42196 = (i__4790__auto___42195 + (1));
+i__4790__auto___42195 = G__42196;
 continue;
 } else {
 }

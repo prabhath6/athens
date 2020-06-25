@@ -35,7 +35,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.format.IDevtoolsFormat,value);
 }
-}catch (e24147){var _e__20777__auto__ = e24147;
+}catch (e24147){var _e__20573__auto__ = e24147;
 return false;
 }})())?devtools.format._header(value):(cljs.core.truth_((function (){try{if((!((value == null)))){
 if(((false) || ((cljs.core.PROTOCOL_SENTINEL === value.devtools$protocols$IFormat$)))){
@@ -50,7 +50,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.protocols.IFormat,value);
 }
-}catch (e24149){var _e__20777__auto__ = e24149;
+}catch (e24149){var _e__20573__auto__ = e24149;
 return false;
 }})())?devtools.protocols._header(value):devtools.formatters.templating.render_markup(devtools.formatters.markup._LT_header_GT_(value))
 )));
@@ -73,7 +73,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.format.IDevtoolsFormat,value);
 }
-}catch (e24154){var _e__20777__auto__ = e24154;
+}catch (e24151){var _e__20573__auto__ = e24151;
 return false;
 }})())?devtools.format._has_body(value):(cljs.core.truth_((function (){try{if((!((value == null)))){
 if(((false) || ((cljs.core.PROTOCOL_SENTINEL === value.devtools$protocols$IFormat$)))){
@@ -88,7 +88,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.protocols.IFormat,value);
 }
-}catch (e24156){var _e__20777__auto__ = e24156;
+}catch (e24156){var _e__20573__auto__ = e24156;
 return false;
 }})())?devtools.protocols._has_body(value):false
 ))));
@@ -113,7 +113,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.format.IDevtoolsFormat,value);
 }
-}catch (e24158){var _e__20777__auto__ = e24158;
+}catch (e24158){var _e__20573__auto__ = e24158;
 return false;
 }})())){
 return devtools.format._body(value);
@@ -131,7 +131,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.protocols.IFormat,value);
 }
-}catch (e24163){var _e__20777__auto__ = e24163;
+}catch (e24160){var _e__20573__auto__ = e24160;
 return false;
 }})())){
 return devtools.protocols._body(value);
@@ -163,28 +163,28 @@ devtools.formatters.core.has_body = devtools.formatters.core.config_wrapper(devt
 devtools.formatters.core.body = devtools.formatters.core.config_wrapper(devtools.formatters.core.body_STAR_);
 devtools.formatters.core.wrap_with_exception_guard = (function devtools$formatters$core$wrap_with_exception_guard(f){
 return (function() { 
-var G__24177__delegate = function (args){
+var G__24174__delegate = function (args){
 try{return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(f,args);
 }catch (e24170){var e = e24170;
 devtools.reporter.report_internal_error_BANG_.cljs$core$IFn$_invoke$arity$variadic(e,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["an exception was raised during value formatting"], 0));
 
 return null;
 }};
-var G__24177 = function (var_args){
+var G__24174 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__24178__i = 0, G__24178__a = new Array(arguments.length -  0);
-while (G__24178__i < G__24178__a.length) {G__24178__a[G__24178__i] = arguments[G__24178__i + 0]; ++G__24178__i;}
-  args = new cljs.core.IndexedSeq(G__24178__a,0,null);
+var G__24176__i = 0, G__24176__a = new Array(arguments.length -  0);
+while (G__24176__i < G__24176__a.length) {G__24176__a[G__24176__i] = arguments[G__24176__i + 0]; ++G__24176__i;}
+  args = new cljs.core.IndexedSeq(G__24176__a,0,null);
 } 
-return G__24177__delegate.call(this,args);};
-G__24177.cljs$lang$maxFixedArity = 0;
-G__24177.cljs$lang$applyTo = (function (arglist__24179){
-var args = cljs.core.seq(arglist__24179);
-return G__24177__delegate(args);
+return G__24174__delegate.call(this,args);};
+G__24174.cljs$lang$maxFixedArity = 0;
+G__24174.cljs$lang$applyTo = (function (arglist__24178){
+var args = cljs.core.seq(arglist__24178);
+return G__24174__delegate(args);
 });
-G__24177.cljs$core$IFn$_invoke$arity$variadic = G__24177__delegate;
-return G__24177;
+G__24174.cljs$core$IFn$_invoke$arity$variadic = G__24174__delegate;
+return G__24174;
 })()
 ;
 });
