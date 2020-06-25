@@ -293,8 +293,8 @@ return (((x instanceof cljs.core.Keyword)) || (typeof x === 'string') || (typeof
  *   in seqs with more than one element have the same namespace. Returns
  *   the [namespace pair-seq] or nil.
  */
-zprint.sutil.slift_ns = (function zprint$sutil$slift_ns(p__31070,pair_seq,ns){
-var map__31071 = p__31070;
+zprint.sutil.slift_ns = (function zprint$sutil$slift_ns(p__31069,pair_seq,ns){
+var map__31071 = p__31069;
 var map__31071__$1 = (((((!((map__31071 == null))))?(((((map__31071.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31071.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__31071):map__31071);
 var map_options = map__31071__$1;
 var in_code_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__31071__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));

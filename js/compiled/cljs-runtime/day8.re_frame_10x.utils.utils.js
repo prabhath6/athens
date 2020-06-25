@@ -16,9 +16,9 @@ return cljs.core.nth.cljs$core$IFn$_invoke$arity$2(v,(num - (1)));
  * Gets the index of all items in vec that match the predicate
  */
 day8.re_frame_10x.utils.utils.find_all_indexes_in_vec = (function day8$re_frame_10x$utils$utils$find_all_indexes_in_vec(pred,v){
-return cljs.core.keep_indexed.cljs$core$IFn$_invoke$arity$2((function (p1__26938_SHARP_,p2__26937_SHARP_){
-if(cljs.core.truth_((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(p2__26937_SHARP_) : pred.call(null,p2__26937_SHARP_)))){
-return p1__26938_SHARP_;
+return cljs.core.keep_indexed.cljs$core$IFn$_invoke$arity$2((function (p1__26941_SHARP_,p2__26940_SHARP_){
+if(cljs.core.truth_((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(p2__26940_SHARP_) : pred.call(null,p2__26940_SHARP_)))){
+return p1__26941_SHARP_;
 } else {
 return null;
 }
@@ -80,14 +80,14 @@ return x;
  */
 day8.re_frame_10x.utils.utils.pluralize = (function day8$re_frame_10x$utils$utils$pluralize(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___26976 = arguments.length;
-var i__4790__auto___26977 = (0);
+var len__4789__auto___26974 = arguments.length;
+var i__4790__auto___26975 = (0);
 while(true){
-if((i__4790__auto___26977 < len__4789__auto___26976)){
-args__4795__auto__.push((arguments[i__4790__auto___26977]));
+if((i__4790__auto___26975 < len__4789__auto___26974)){
+args__4795__auto__.push((arguments[i__4790__auto___26975]));
 
-var G__26978 = (i__4790__auto___26977 + (1));
-i__4790__auto___26977 = G__26978;
+var G__26976 = (i__4790__auto___26975 + (1));
+i__4790__auto___26975 = G__26976;
 continue;
 } else {
 }
@@ -127,14 +127,14 @@ return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__26949,G__26950
  */
 day8.re_frame_10x.utils.utils.pluralize_ = (function day8$re_frame_10x$utils$utils$pluralize_(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___26984 = arguments.length;
-var i__4790__auto___26985 = (0);
+var len__4789__auto___26982 = arguments.length;
+var i__4790__auto___26983 = (0);
 while(true){
-if((i__4790__auto___26985 < len__4789__auto___26984)){
-args__4795__auto__.push((arguments[i__4790__auto___26985]));
+if((i__4790__auto___26983 < len__4789__auto___26982)){
+args__4795__auto__.push((arguments[i__4790__auto___26983]));
 
-var G__26987 = (i__4790__auto___26985 + (1));
-i__4790__auto___26985 = G__26987;
+var G__26984 = (i__4790__auto___26983 + (1));
+i__4790__auto___26983 = G__26984;
 continue;
 } else {
 }

@@ -48,10 +48,10 @@ return React.createElement("span",({"key": index}),sablono.interpreter.interpret
 devcards.util.edn_renderer.join_html = (function devcards$util$edn_renderer$join_html(separator,coll){
 return devcards.util.edn_renderer.interpose_separator(cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentVector.EMPTY,cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(devcards.util.edn_renderer.html_val,coll)),separator,devcards.util.edn_renderer.separate_fn(coll));
 });
-devcards.util.edn_renderer.html_keyval = (function devcards$util$edn_renderer$html_keyval(p__50573){
-var vec__50574 = p__50573;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50574,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50574,(1),null);
+devcards.util.edn_renderer.html_keyval = (function devcards$util$edn_renderer$html_keyval(p__50572){
+var vec__50573 = p__50572;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50573,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50573,(1),null);
 return React.createElement("span",({"key": cljs.core.prn_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([k], 0)), "className": "keyval"}),sablono.interpreter.interpret((devcards.util.edn_renderer.html.cljs$core$IFn$_invoke$arity$1 ? devcards.util.edn_renderer.html.cljs$core$IFn$_invoke$arity$1(k) : devcards.util.edn_renderer.html.call(null,k))),sablono.interpreter.interpret((devcards.util.edn_renderer.html.cljs$core$IFn$_invoke$arity$1 ? devcards.util.edn_renderer.html.cljs$core$IFn$_invoke$arity$1(v) : devcards.util.edn_renderer.html.call(null,v))));
 });
 devcards.util.edn_renderer.html_keyvals = (function devcards$util$edn_renderer$html_keyvals(coll){
