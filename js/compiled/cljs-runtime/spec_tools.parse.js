@@ -24,8 +24,8 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("cljs.spec
 return null;
 } else {
 if(cljs.core.qualified_keyword_QMARK_(x)){
-var G__54957 = cljs.spec.alpha.form(cljs.spec.alpha.get_spec(x));
-x = G__54957;
+var G__54962 = cljs.spec.alpha.form(cljs.spec.alpha.get_spec(x));
+x = G__54962;
 continue;
 } else {
 if((x instanceof cljs.core.Symbol)){
@@ -39,8 +39,8 @@ var G__54933 = x;
 return (spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2 ? spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2(G__54932,G__54933) : spec_tools.parse.parse_form.call(null,G__54932,G__54933));
 } else {
 if(cljs.core.truth_(cljs.spec.alpha.spec_QMARK_(x))){
-var G__54958 = cljs.spec.alpha.form(x);
-x = G__54958;
+var G__54964 = cljs.spec.alpha.form(x);
+x = G__54964;
 continue;
 } else {
 if(cljs.core.ifn_QMARK_(x)){
@@ -85,8 +85,8 @@ spec_tools.parse.parse_form = (function (){var method_table__4672__auto__ = cljs
 var prefer_table__4673__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var method_cache__4674__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var cached_hierarchy__4675__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4676__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),new cljs.core.Keyword("spec-tools.parse","default","spec-tools.parse/default",-1184283850)], null),new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),(function (){var fexpr__54937 = cljs.core.get_global_hierarchy;
-return (fexpr__54937.cljs$core$IFn$_invoke$arity$0 ? fexpr__54937.cljs$core$IFn$_invoke$arity$0() : fexpr__54937.call(null));
+var hierarchy__4676__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),new cljs.core.Keyword("spec-tools.parse","default","spec-tools.parse/default",-1184283850)], null),new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),(function (){var fexpr__54938 = cljs.core.get_global_hierarchy;
+return (fexpr__54938.cljs$core$IFn$_invoke$arity$0 ? fexpr__54938.cljs$core$IFn$_invoke$arity$0() : fexpr__54938.call(null));
 })());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("spec-tools.parse","parse-form"),(function (dispatch,_){
 return dispatch;

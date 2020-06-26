@@ -122,10 +122,10 @@ return (instaparse.auto_flatten_seq.true_count.cljs$core$IFn$_invoke$arity$1 ? i
 })() - (1)))){
 return instaparse.auto_flatten_seq.delve(v,cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.pop(index),(cljs.core.peek(index) + (1))));
 } else {
-var G__63349 = v;
-var G__63350 = cljs.core.pop(index);
-v = G__63349;
-index = G__63350;
+var G__63345 = v;
+var G__63346 = cljs.core.pop(index);
+v = G__63345;
+index = G__63346;
 continue;
 
 }
@@ -387,10 +387,10 @@ var unmixed_hash = existing_unmixed_hash;
 var coll__$1 = cljs.core.seq(coll);
 while(true){
 if((!((coll__$1 == null)))){
-var G__63374 = ((cljs.core.imul((31),unmixed_hash) + cljs.core.hash(cljs.core.first(coll__$1))) | (0));
-var G__63375 = cljs.core.next(coll__$1);
-unmixed_hash = G__63374;
-coll__$1 = G__63375;
+var G__63349 = ((cljs.core.imul((31),unmixed_hash) + cljs.core.hash(cljs.core.first(coll__$1))) | (0));
+var G__63350 = cljs.core.next(coll__$1);
+unmixed_hash = G__63349;
+coll__$1 = G__63350;
 continue;
 } else {
 return unmixed_hash;
@@ -429,16 +429,16 @@ if(temp__5733__auto__){
 var s = temp__5733__auto__;
 var fst = cljs.core.first(v);
 if(instaparse.auto_flatten_seq.afs_QMARK_(fst)){
-var G__63386 = (instaparse.auto_flatten_seq.flat_vec_helper.cljs$core$IFn$_invoke$arity$2 ? instaparse.auto_flatten_seq.flat_vec_helper.cljs$core$IFn$_invoke$arity$2(acc,fst) : instaparse.auto_flatten_seq.flat_vec_helper.call(null,acc,fst));
-var G__63387 = cljs.core.next(v);
-acc = G__63386;
-v = G__63387;
+var G__63351 = (instaparse.auto_flatten_seq.flat_vec_helper.cljs$core$IFn$_invoke$arity$2 ? instaparse.auto_flatten_seq.flat_vec_helper.cljs$core$IFn$_invoke$arity$2(acc,fst) : instaparse.auto_flatten_seq.flat_vec_helper.call(null,acc,fst));
+var G__63352 = cljs.core.next(v);
+acc = G__63351;
+v = G__63352;
 continue;
 } else {
-var G__63388 = cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(acc,fst);
-var G__63389 = cljs.core.next(v);
-acc = G__63388;
-v = G__63389;
+var G__63353 = cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(acc,fst);
+var G__63354 = cljs.core.next(v);
+acc = G__63353;
+v = G__63354;
 continue;
 }
 } else {

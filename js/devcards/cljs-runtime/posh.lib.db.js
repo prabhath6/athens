@@ -56,8 +56,8 @@ while(true){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(poshdb),new cljs.core.Keyword(null,"db","db",993250759))){
 return cljs.core.second(poshdb);
 } else {
-var G__30703 = posh.lib.db.get_parent_db(poshdb);
-poshdb = G__30703;
+var G__30699 = posh.lib.db.get_parent_db(poshdb);
+poshdb = G__30699;
 continue;
 }
 break;
@@ -75,8 +75,8 @@ return posh.lib.datom_matcher.datom_match_QMARK_(tx_patterns,datom);
 });
 });
 posh.lib.db.generate_initial_db = (function posh$lib$db$generate_initial_db(var_args){
-var G__30664 = arguments.length;
-switch (G__30664) {
+var G__30667 = arguments.length;
+switch (G__30667) {
 case 3:
 return posh.lib.db.generate_initial_db.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 

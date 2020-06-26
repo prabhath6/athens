@@ -17,9 +17,9 @@ return x;
 spec_tools.transform.keyword_or_string__GT_ = (function spec_tools$transform$keyword_or_string__GT_(f){
 return (function (spec,x){
 if((x instanceof cljs.core.Keyword)){
-var G__54959 = spec;
-var G__54960 = spec_tools.transform.keyword__GT_string(spec,x);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__54959,G__54960) : f.call(null,G__54959,G__54960));
+var G__54957 = spec;
+var G__54958 = spec_tools.transform.keyword__GT_string(spec,x);
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__54957,G__54958) : f.call(null,G__54957,G__54958));
 } else {
 if(typeof x === 'string'){
 return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(spec,x) : f.call(null,spec,x));
@@ -33,9 +33,9 @@ return x;
 spec_tools.transform.keyword__GT_ = (function spec_tools$transform$keyword__GT_(f){
 return (function (spec,x){
 if((x instanceof cljs.core.Keyword)){
-var G__54961 = spec;
-var G__54962 = spec_tools.transform.keyword__GT_string(spec,x);
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__54961,G__54962) : f.call(null,G__54961,G__54962));
+var G__54959 = spec;
+var G__54960 = spec_tools.transform.keyword__GT_string(spec,x);
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(G__54959,G__54960) : f.call(null,G__54959,G__54960));
 } else {
 return x;
 
@@ -50,11 +50,11 @@ return x;
 } else {
 return x_SINGLEQUOTE_;
 }
-}catch (e54963){if((e54963 instanceof Error)){
-var ___$1 = e54963;
+}catch (e54961){if((e54961 instanceof Error)){
+var ___$1 = e54961;
 return x;
 } else {
-throw e54963;
+throw e54961;
 
 }
 }} else {
@@ -69,11 +69,11 @@ return x;
 } else {
 return x_SINGLEQUOTE_;
 }
-}catch (e54964){if((e54964 instanceof Error)){
-var ___$1 = e54964;
+}catch (e54963){if((e54963 instanceof Error)){
+var ___$1 = e54963;
 return x;
 } else {
-throw e54964;
+throw e54963;
 
 }
 }} else {
