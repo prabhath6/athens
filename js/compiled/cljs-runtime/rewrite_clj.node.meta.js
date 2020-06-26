@@ -154,9 +154,9 @@ return false;
 (rewrite_clj.node.meta.MetaNode.prototype.rewrite_clj$node$protocols$Node$sexpr$arity$1 = (function (_){
 var self__ = this;
 var ___$1 = this;
-var vec__30011 = rewrite_clj.node.protocols.sexprs(self__.children);
-var mta = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__30011,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__30011,(1),null);
+var vec__30012 = rewrite_clj.node.protocols.sexprs(self__.children);
+var mta = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__30012,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__30012,(1),null);
 if((((!((data == null))))?(((((data.cljs$lang$protocol_mask$partition0$ & (262144))) || ((cljs.core.PROTOCOL_SENTINEL === data.cljs$core$IWithMeta$))))?true:false):false)){
 } else {
 throw (new Error(["Assert failed: ",["cannot attach metadata to: ",cljs.core.pr_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([data], 0))].join(''),"\n","(implements? IWithMeta data)"].join('')));
@@ -212,23 +212,23 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(this$__$1,new cljs.core.Key
 (rewrite_clj.node.meta.MetaNode.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4446__auto__,k__4447__auto__,G__29999){
 var self__ = this;
 var this__4446__auto____$1 = this;
-var pred__30015 = cljs.core.keyword_identical_QMARK_;
-var expr__30016 = k__4447__auto__;
-if(cljs.core.truth_((function (){var G__30018 = new cljs.core.Keyword(null,"tag","tag",-1290361223);
-var G__30019 = expr__30016;
-return (pred__30015.cljs$core$IFn$_invoke$arity$2 ? pred__30015.cljs$core$IFn$_invoke$arity$2(G__30018,G__30019) : pred__30015.call(null,G__30018,G__30019));
+var pred__30018 = cljs.core.keyword_identical_QMARK_;
+var expr__30019 = k__4447__auto__;
+if(cljs.core.truth_((function (){var G__30021 = new cljs.core.Keyword(null,"tag","tag",-1290361223);
+var G__30022 = expr__30019;
+return (pred__30018.cljs$core$IFn$_invoke$arity$2 ? pred__30018.cljs$core$IFn$_invoke$arity$2(G__30021,G__30022) : pred__30018.call(null,G__30021,G__30022));
 })())){
 return (new rewrite_clj.node.meta.MetaNode(G__29999,self__.prefix,self__.children,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_((function (){var G__30020 = new cljs.core.Keyword(null,"prefix","prefix",-265908465);
-var G__30021 = expr__30016;
-return (pred__30015.cljs$core$IFn$_invoke$arity$2 ? pred__30015.cljs$core$IFn$_invoke$arity$2(G__30020,G__30021) : pred__30015.call(null,G__30020,G__30021));
+if(cljs.core.truth_((function (){var G__30023 = new cljs.core.Keyword(null,"prefix","prefix",-265908465);
+var G__30024 = expr__30019;
+return (pred__30018.cljs$core$IFn$_invoke$arity$2 ? pred__30018.cljs$core$IFn$_invoke$arity$2(G__30023,G__30024) : pred__30018.call(null,G__30023,G__30024));
 })())){
 return (new rewrite_clj.node.meta.MetaNode(self__.tag,G__29999,self__.children,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_((function (){var G__30022 = new cljs.core.Keyword(null,"children","children",-940561982);
-var G__30023 = expr__30016;
-return (pred__30015.cljs$core$IFn$_invoke$arity$2 ? pred__30015.cljs$core$IFn$_invoke$arity$2(G__30022,G__30023) : pred__30015.call(null,G__30022,G__30023));
+if(cljs.core.truth_((function (){var G__30025 = new cljs.core.Keyword(null,"children","children",-940561982);
+var G__30026 = expr__30019;
+return (pred__30018.cljs$core$IFn$_invoke$arity$2 ? pred__30018.cljs$core$IFn$_invoke$arity$2(G__30025,G__30026) : pred__30018.call(null,G__30025,G__30026));
 })())){
 return (new rewrite_clj.node.meta.MetaNode(self__.tag,self__.prefix,G__29999,self__.__meta,self__.__extmap,null));
 } else {

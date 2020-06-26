@@ -14,8 +14,8 @@ return [day8.re_frame_10x.utils.localstorage.safe_prefix,cljs.core.str.cljs$core
  * Gets a re-frame-10x value from local storage.
  */
 day8.re_frame_10x.utils.localstorage.get = (function day8$re_frame_10x$utils$localstorage$get(var_args){
-var G__33544 = arguments.length;
-switch (G__33544) {
+var G__33545 = arguments.length;
+switch (G__33545) {
 case 1:
 return day8.re_frame_10x.utils.localstorage.get.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -68,14 +68,14 @@ day8.re_frame_10x.utils.localstorage.storage.remove(k);
 }
 
 
-var G__33572 = seq__33550;
-var G__33573 = chunk__33551;
-var G__33574 = count__33552;
-var G__33575 = (i__33553 + (1));
-seq__33550 = G__33572;
-chunk__33551 = G__33573;
-count__33552 = G__33574;
-i__33553 = G__33575;
+var G__33588 = seq__33550;
+var G__33589 = chunk__33551;
+var G__33590 = count__33552;
+var G__33591 = (i__33553 + (1));
+seq__33550 = G__33588;
+chunk__33551 = G__33589;
+count__33552 = G__33590;
+i__33553 = G__33591;
 continue;
 } else {
 var temp__5735__auto__ = cljs.core.seq(seq__33550);
@@ -83,14 +83,14 @@ if(temp__5735__auto__){
 var seq__33550__$1 = temp__5735__auto__;
 if(cljs.core.chunked_seq_QMARK_(seq__33550__$1)){
 var c__4609__auto__ = cljs.core.chunk_first(seq__33550__$1);
-var G__33580 = cljs.core.chunk_rest(seq__33550__$1);
-var G__33581 = c__4609__auto__;
-var G__33582 = cljs.core.count(c__4609__auto__);
-var G__33583 = (0);
-seq__33550 = G__33580;
-chunk__33551 = G__33581;
-count__33552 = G__33582;
-i__33553 = G__33583;
+var G__33596 = cljs.core.chunk_rest(seq__33550__$1);
+var G__33597 = c__4609__auto__;
+var G__33598 = cljs.core.count(c__4609__auto__);
+var G__33599 = (0);
+seq__33550 = G__33596;
+chunk__33551 = G__33597;
+count__33552 = G__33598;
+i__33553 = G__33599;
 continue;
 } else {
 var k = cljs.core.first(seq__33550__$1);
@@ -100,14 +100,14 @@ day8.re_frame_10x.utils.localstorage.storage.remove(k);
 }
 
 
-var G__33586 = cljs.core.next(seq__33550__$1);
-var G__33587 = null;
-var G__33588 = (0);
-var G__33589 = (0);
-seq__33550 = G__33586;
-chunk__33551 = G__33587;
-count__33552 = G__33588;
-i__33553 = G__33589;
+var G__33604 = cljs.core.next(seq__33550__$1);
+var G__33605 = null;
+var G__33606 = (0);
+var G__33607 = (0);
+seq__33550 = G__33604;
+chunk__33551 = G__33605;
+count__33552 = G__33606;
+i__33553 = G__33607;
 continue;
 }
 } else {

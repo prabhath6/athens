@@ -61,8 +61,8 @@ goog.require('stylefy.impl.styles');
  * Options is an optional map, which contains HTML attributes (:class, :href, :src etc.).
  */
 stylefy.core.use_style = (function stylefy$core$use_style(var_args){
-var G__42145 = arguments.length;
-switch (G__42145) {
+var G__42132 = arguments.length;
+switch (G__42132) {
 case 1:
 return stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -107,8 +107,8 @@ return stylefy.impl.styles.use_style_BANG_(style,options,stylefy.impl.dom.save_s
  * take a look at sub-style function.
  */
 stylefy.core.use_sub_style = (function stylefy$core$use_sub_style(var_args){
-var G__42151 = arguments.length;
-switch (G__42151) {
+var G__42141 = arguments.length;
+switch (G__42141) {
 case 2:
 return stylefy.core.use_sub_style.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -217,8 +217,8 @@ return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42153,seq42152
  *                            This value is also used as suffix in caching.
  */
 stylefy.core.init = (function stylefy$core$init(var_args){
-var G__42155 = arguments.length;
-switch (G__42155) {
+var G__42157 = arguments.length;
+switch (G__42157) {
 case 0:
 return stylefy.core.init.cljs$core$IFn$_invoke$arity$0();
 
@@ -309,11 +309,11 @@ return null;
 (stylefy.core.keyframes.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(stylefy.core.keyframes.cljs$lang$applyTo = (function (seq42158){
-var G__42159 = cljs.core.first(seq42158);
-var seq42158__$1 = cljs.core.next(seq42158);
+(stylefy.core.keyframes.cljs$lang$applyTo = (function (seq42160){
+var G__42161 = cljs.core.first(seq42160);
+var seq42160__$1 = cljs.core.next(seq42160);
 var self__4776__auto__ = this;
-return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42159,seq42158__$1);
+return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42161,seq42160__$1);
 }));
 
 /**
