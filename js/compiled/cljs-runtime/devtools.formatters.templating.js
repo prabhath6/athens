@@ -7,8 +7,8 @@ goog.require('devtools.formatters.helpers');
 goog.require('devtools.formatters.state');
 goog.require('clojure.string');
 devtools.formatters.templating.mark_as_group_BANG_ = (function devtools$formatters$templating$mark_as_group_BANG_(value){
-var x23795_23866 = value;
-(x23795_23866.devtools$protocols$IGroup$ = cljs.core.PROTOCOL_SENTINEL);
+var x23795_23863 = value;
+(x23795_23863.devtools$protocols$IGroup$ = cljs.core.PROTOCOL_SENTINEL);
 
 
 return value;
@@ -609,24 +609,24 @@ throw (new Error(["Assert failed: ",["result of markup rendering must be a templ
 devtools.formatters.templating.render_markup_STAR_ = (function devtools$formatters$templating$render_markup_STAR_(initial_value,value){
 while(true){
 if(cljs.core.fn_QMARK_(value)){
-var G__23944 = initial_value;
-var G__23945 = (value.cljs$core$IFn$_invoke$arity$0 ? value.cljs$core$IFn$_invoke$arity$0() : value.call(null));
-initial_value = G__23944;
-value = G__23945;
+var G__23956 = initial_value;
+var G__23957 = (value.cljs$core$IFn$_invoke$arity$0 ? value.cljs$core$IFn$_invoke$arity$0() : value.call(null));
+initial_value = G__23956;
+value = G__23957;
 continue;
 } else {
 if((value instanceof cljs.core.Keyword)){
-var G__23946 = initial_value;
-var G__23947 = devtools.formatters.helpers.pref(value);
-initial_value = G__23946;
-value = G__23947;
+var G__23962 = initial_value;
+var G__23963 = devtools.formatters.helpers.pref(value);
+initial_value = G__23962;
+value = G__23963;
 continue;
 } else {
 if(cljs.core.sequential_QMARK_(value)){
-var G__23948 = initial_value;
-var G__23949 = devtools.formatters.templating.render_json_ml(value);
-initial_value = G__23948;
-value = G__23949;
+var G__23964 = initial_value;
+var G__23965 = devtools.formatters.templating.render_json_ml(value);
+initial_value = G__23964;
+value = G__23965;
 continue;
 } else {
 if(devtools.formatters.templating.template_QMARK_(value)){

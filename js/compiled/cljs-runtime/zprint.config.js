@@ -62,14 +62,14 @@ return val_in_latter;
  */
 zprint.config.merge_deep = (function zprint$config$merge_deep(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___30906 = arguments.length;
-var i__4790__auto___30907 = (0);
+var len__4789__auto___30908 = arguments.length;
+var i__4790__auto___30909 = (0);
 while(true){
-if((i__4790__auto___30907 < len__4789__auto___30906)){
-args__4795__auto__.push((arguments[i__4790__auto___30907]));
+if((i__4790__auto___30909 < len__4789__auto___30908)){
+args__4795__auto__.push((arguments[i__4790__auto___30909]));
 
-var G__30908 = (i__4790__auto___30907 + (1));
-i__4790__auto___30907 = G__30908;
+var G__30910 = (i__4790__auto___30909 + (1));
+i__4790__auto___30909 = G__30910;
 continue;
 } else {
 }
@@ -87,9 +87,9 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.merge_with,zprint
 (zprint.config.merge_deep.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(zprint.config.merge_deep.cljs$lang$applyTo = (function (seq30749){
+(zprint.config.merge_deep.cljs$lang$applyTo = (function (seq30745){
 var self__4777__auto__ = this;
-return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq30749));
+return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq30745));
 }));
 
 /**
@@ -108,14 +108,14 @@ return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"fr
  */
 zprint.config.merge_deep_doc = (function zprint$config$merge_deep_doc(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___30911 = arguments.length;
-var i__4790__auto___30912 = (0);
+var len__4789__auto___30914 = arguments.length;
+var i__4790__auto___30915 = (0);
 while(true){
-if((i__4790__auto___30912 < len__4789__auto___30911)){
-args__4795__auto__.push((arguments[i__4790__auto___30912]));
+if((i__4790__auto___30915 < len__4789__auto___30914)){
+args__4795__auto__.push((arguments[i__4790__auto___30915]));
 
-var G__30913 = (i__4790__auto___30912 + (1));
-i__4790__auto___30912 = G__30913;
+var G__30916 = (i__4790__auto___30915 + (1));
+i__4790__auto___30915 = G__30916;
 continue;
 } else {
 }
