@@ -203,17 +203,17 @@ continue;
 break;
 }
 
-var G__58721 = vals;
-vals = G__58721;
-continue;
-} else {
-if(edamame.impl.parser.non_match_QMARK_(next_val)){
 var G__58722 = vals;
 vals = G__58722;
 continue;
 } else {
-var G__58723 = cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(vals,next_val);
+if(edamame.impl.parser.non_match_QMARK_(next_val)){
+var G__58723 = vals;
 vals = G__58723;
+continue;
+} else {
+var G__58724 = cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(vals,next_val);
+vals = G__58724;
 continue;
 
 }
@@ -247,18 +247,18 @@ return edamame.impl.parser.throw_reader.cljs$core$IFn$_invoke$arity$2(reader,"Er
 sb.append(ch);
 
 if(("\\" === ch)){
-var ch_58724__$1 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
-if((ch_58724__$1 == null)){
+var ch_58725__$1 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
+if((ch_58725__$1 == null)){
 edamame.impl.parser.throw_reader.cljs$core$IFn$_invoke$arity$2(reader,"Error while parsing regex");
 } else {
 }
 
-sb.append(ch_58724__$1);
+sb.append(ch_58725__$1);
 } else {
 }
 
-var G__58725 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
-ch = G__58725;
+var G__58726 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
+ch = G__58726;
 continue;
 }
 }
@@ -287,12 +287,12 @@ var freq = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58601,(1),null);
 if((freq > (1))){
 cljs.core.chunk_append(b__58600,id);
 
-var G__58726 = (i__58599 + (1));
-i__58599 = G__58726;
-continue;
-} else {
 var G__58727 = (i__58599 + (1));
 i__58599 = G__58727;
+continue;
+} else {
+var G__58728 = (i__58599 + (1));
+i__58599 = G__58728;
 continue;
 }
 } else {
@@ -312,8 +312,8 @@ var freq = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58604,(1),null);
 if((freq > (1))){
 return cljs.core.cons(id,edamame$impl$parser$duplicate_keys_error_$_duplicates_$_iter__58597(cljs.core.rest(s__58598__$2)));
 } else {
-var G__58728 = cljs.core.rest(s__58598__$2);
-s__58598__$1 = G__58728;
+var G__58729 = cljs.core.rest(s__58598__$2);
+s__58598__$1 = G__58729;
 continue;
 }
 }

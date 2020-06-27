@@ -107,8 +107,8 @@ return stylefy.impl.styles.use_style_BANG_(style,options,stylefy.impl.dom.save_s
  * take a look at sub-style function.
  */
 stylefy.core.use_sub_style = (function stylefy$core$use_sub_style(var_args){
-var G__42151 = arguments.length;
-switch (G__42151) {
+var G__42155 = arguments.length;
+switch (G__42155) {
 case 2:
 return stylefy.core.use_sub_style.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -178,11 +178,11 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(stylefy.impl.styles.sub_sty
 (stylefy.core.sub_style.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(stylefy.core.sub_style.cljs$lang$applyTo = (function (seq42155){
-var G__42156 = cljs.core.first(seq42155);
-var seq42155__$1 = cljs.core.next(seq42155);
+(stylefy.core.sub_style.cljs$lang$applyTo = (function (seq42182){
+var G__42183 = cljs.core.first(seq42182);
+var seq42182__$1 = cljs.core.next(seq42182);
 var self__4776__auto__ = this;
-return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42156,seq42155__$1);
+return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42183,seq42182__$1);
 }));
 
 /**
@@ -217,8 +217,8 @@ return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42156,seq42155
  *                            This value is also used as suffix in caching.
  */
 stylefy.core.init = (function stylefy$core$init(var_args){
-var G__42166 = arguments.length;
-switch (G__42166) {
+var G__42185 = arguments.length;
+switch (G__42185) {
 case 0:
 return stylefy.core.init.cljs$core$IFn$_invoke$arity$0();
 

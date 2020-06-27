@@ -45,9 +45,9 @@ return this__4439__auto____$1.cljs$core$ILookup$_lookup$arity$3(null,k__4440__au
 (rewrite_clj.node.token.TokenNode.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4441__auto__,k30159,else__4442__auto__){
 var self__ = this;
 var this__4441__auto____$1 = this;
-var G__30166 = k30159;
-var G__30166__$1 = (((G__30166 instanceof cljs.core.Keyword))?G__30166.fqn:null);
-switch (G__30166__$1) {
+var G__30164 = k30159;
+var G__30164__$1 = (((G__30164 instanceof cljs.core.Keyword))?G__30164.fqn:null);
+switch (G__30164__$1) {
 case "value":
 return self__.value;
 
