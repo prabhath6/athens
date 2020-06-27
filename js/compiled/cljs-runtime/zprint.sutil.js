@@ -323,13 +323,13 @@ var ns__$1 = null;
 var pair_seq__$1 = pair_seq;
 var out = cljs.core.PersistentVector.EMPTY;
 while(true){
-var vec__31079 = cljs.core.first(pair_seq__$1);
-var seq__31080 = cljs.core.seq(vec__31079);
-var first__31081 = cljs.core.first(seq__31080);
-var seq__31080__$1 = cljs.core.next(seq__31080);
-var k = first__31081;
-var rest_of_pair = seq__31080__$1;
-var pair = vec__31079;
+var vec__31081 = cljs.core.first(pair_seq__$1);
+var seq__31082 = cljs.core.seq(vec__31081);
+var first__31083 = cljs.core.first(seq__31082);
+var seq__31082__$1 = cljs.core.next(seq__31082);
+var k = first__31083;
+var rest_of_pair = seq__31082__$1;
+var pair = vec__31081;
 var current_ns = ((((rest_of_pair) && ((((k instanceof cljs.core.Keyword)) || ((k instanceof cljs.core.Symbol))))))?cljs.core.namespace(k):null);
 if(cljs.core.not(k)){
 if(cljs.core.truth_(ns__$1)){
@@ -341,33 +341,33 @@ return null;
 if(cljs.core.truth_(current_ns)){
 if(cljs.core.truth_(ns__$1)){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(ns__$1,current_ns)){
-var G__31249 = ns__$1;
-var G__31250 = cljs.core.next(pair_seq__$1);
-var G__31251 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
-ns__$1 = G__31249;
-pair_seq__$1 = G__31250;
-out = G__31251;
-continue;
-} else {
-return null;
-}
-} else {
-var G__31252 = current_ns;
+var G__31252 = ns__$1;
 var G__31253 = cljs.core.next(pair_seq__$1);
 var G__31254 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
 ns__$1 = G__31252;
 pair_seq__$1 = G__31253;
 out = G__31254;
 continue;
+} else {
+return null;
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(pair),(1))){
-var G__31258 = ns__$1;
+var G__31258 = current_ns;
 var G__31259 = cljs.core.next(pair_seq__$1);
-var G__31260 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,pair);
+var G__31260 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
 ns__$1 = G__31258;
 pair_seq__$1 = G__31259;
 out = G__31260;
+continue;
+}
+} else {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(pair),(1))){
+var G__31261 = ns__$1;
+var G__31262 = cljs.core.next(pair_seq__$1);
+var G__31263 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,pair);
+ns__$1 = G__31261;
+pair_seq__$1 = G__31262;
+out = G__31263;
 continue;
 } else {
 return null;
