@@ -117,8 +117,8 @@ return re_frame.events.register(id,new cljs.core.PersistentVector(null, 4, 5, cl
  *   This form of registration is almost never used. 
  */
 re_frame.core.reg_event_ctx = (function re_frame$core$reg_event_ctx(var_args){
-var G__46927 = arguments.length;
-switch (G__46927) {
+var G__46924 = arguments.length;
+switch (G__46924) {
 case 2:
 return re_frame.core.reg_event_ctx.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -288,14 +288,14 @@ return re_frame.router.event_queue.re_frame$router$IEventQueue$remove_post_event
 });
 re_frame.core.register_handler = (function re_frame$core$register_handler(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___46972 = arguments.length;
-var i__4790__auto___46973 = (0);
+var len__4789__auto___46971 = arguments.length;
+var i__4790__auto___46972 = (0);
 while(true){
-if((i__4790__auto___46973 < len__4789__auto___46972)){
-args__4795__auto__.push((arguments[i__4790__auto___46973]));
+if((i__4790__auto___46972 < len__4789__auto___46971)){
+args__4795__auto__.push((arguments[i__4790__auto___46972]));
 
-var G__46974 = (i__4790__auto___46973 + (1));
-i__4790__auto___46973 = G__46974;
+var G__46973 = (i__4790__auto___46972 + (1));
+i__4790__auto___46972 = G__46973;
 continue;
 } else {
 }
