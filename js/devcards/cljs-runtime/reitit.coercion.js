@@ -309,8 +309,8 @@ return (new reitit.coercion.CoercionError(self__.__meta,cljs.core.not_empty(cljs
 (reitit.coercion.CoercionError.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4446__auto__,k__4447__auto__,G__49839){
 var self__ = this;
 var this__4446__auto____$1 = this;
-var pred__49850 = cljs.core.keyword_identical_QMARK_;
-var expr__49851 = k__4447__auto__;
+var pred__49853 = cljs.core.keyword_identical_QMARK_;
+var expr__49854 = k__4447__auto__;
 return (new reitit.coercion.CoercionError(self__.__meta,cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(self__.__extmap,k__4447__auto__,G__49839),null));
 }));
 
@@ -732,12 +732,12 @@ var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49907,(1),null);
 if(cljs.core.truth_(v)){
 cljs.core.chunk_append(b__49906,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,reitit.coercion.request_coercer(coercion,k,v,opts)], null));
 
-var G__49990 = (i__49905 + (1));
-i__49905 = G__49990;
+var G__49984 = (i__49905 + (1));
+i__49905 = G__49984;
 continue;
 } else {
-var G__49991 = (i__49905 + (1));
-i__49905 = G__49991;
+var G__49985 = (i__49905 + (1));
+i__49905 = G__49985;
 continue;
 }
 } else {
@@ -757,8 +757,8 @@ var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49910,(1),null);
 if(cljs.core.truth_(v)){
 return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,reitit.coercion.request_coercer(coercion,k,v,opts)], null),reitit$coercion$request_coercers_$_iter__49903(cljs.core.rest(s__49904__$2)));
 } else {
-var G__49992 = cljs.core.rest(s__49904__$2);
-s__49904__$1 = G__49992;
+var G__49989 = cljs.core.rest(s__49904__$2);
+s__49904__$1 = G__49989;
 continue;
 }
 }
@@ -822,8 +822,8 @@ var body = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__49925__$1,new cljs.c
 if(cljs.core.truth_(body)){
 return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [status,reitit.coercion.response_coercer(coercion,body,opts)], null),reitit$coercion$response_coercers_$_iter__49913(cljs.core.rest(s__49914__$2)));
 } else {
-var G__49996 = cljs.core.rest(s__49914__$2);
-s__49914__$1 = G__49996;
+var G__49995 = cljs.core.rest(s__49914__$2);
+s__49914__$1 = G__49995;
 continue;
 }
 }

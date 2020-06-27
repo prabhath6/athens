@@ -247,18 +247,18 @@ return edamame.impl.parser.throw_reader.cljs$core$IFn$_invoke$arity$2(reader,"Er
 sb.append(ch);
 
 if(("\\" === ch)){
-var ch_66436__$1 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
-if((ch_66436__$1 == null)){
+var ch_66435__$1 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
+if((ch_66435__$1 == null)){
 edamame.impl.parser.throw_reader.cljs$core$IFn$_invoke$arity$2(reader,"Error while parsing regex");
 } else {
 }
 
-sb.append(ch_66436__$1);
+sb.append(ch_66435__$1);
 } else {
 }
 
-var G__66437 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
-ch = G__66437;
+var G__66436 = reader.cljs$tools$reader$reader_types$Reader$read_char$arity$1(null);
+ch = G__66436;
 continue;
 }
 }

@@ -656,14 +656,14 @@ return tick.alpha.api._LT_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(argum
 break;
 default:
 var args_arr__4810__auto__ = [];
-var len__4789__auto___63364 = arguments.length;
-var i__4790__auto___63365 = (0);
+var len__4789__auto___63363 = arguments.length;
+var i__4790__auto___63364 = (0);
 while(true){
-if((i__4790__auto___63365 < len__4789__auto___63364)){
-args_arr__4810__auto__.push((arguments[i__4790__auto___63365]));
+if((i__4790__auto___63364 < len__4789__auto___63363)){
+args_arr__4810__auto__.push((arguments[i__4790__auto___63364]));
 
-var G__63366 = (i__4790__auto___63365 + (1));
-i__4790__auto___63365 = G__63366;
+var G__63365 = (i__4790__auto___63364 + (1));
+i__4790__auto___63364 = G__63365;
 continue;
 } else {
 }
@@ -688,12 +688,12 @@ return tick.core._LT_(x,y);
 while(true){
 if(cljs.core.truth_(tick.core._LT_(x,y))){
 if(cljs.core.next(more)){
-var G__63367 = y;
-var G__63368 = cljs.core.first(more);
-var G__63369 = cljs.core.next(more);
-x = G__63367;
-y = G__63368;
-more = G__63369;
+var G__63366 = y;
+var G__63367 = cljs.core.first(more);
+var G__63368 = cljs.core.next(more);
+x = G__63366;
+y = G__63367;
+more = G__63368;
 continue;
 } else {
 return tick.core._LT_(y,cljs.core.first(more));
@@ -730,14 +730,14 @@ return tick.alpha.api._LT__EQ_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 break;
 default:
 var args_arr__4810__auto__ = [];
-var len__4789__auto___63371 = arguments.length;
-var i__4790__auto___63372 = (0);
+var len__4789__auto___63370 = arguments.length;
+var i__4790__auto___63371 = (0);
 while(true){
-if((i__4790__auto___63372 < len__4789__auto___63371)){
-args_arr__4810__auto__.push((arguments[i__4790__auto___63372]));
+if((i__4790__auto___63371 < len__4789__auto___63370)){
+args_arr__4810__auto__.push((arguments[i__4790__auto___63371]));
 
-var G__63373 = (i__4790__auto___63372 + (1));
-i__4790__auto___63372 = G__63373;
+var G__63372 = (i__4790__auto___63371 + (1));
+i__4790__auto___63371 = G__63372;
 continue;
 } else {
 }
@@ -762,12 +762,12 @@ return tick.core._LT__EQ_(x,y);
 while(true){
 if(cljs.core.truth_(tick.core._LT__EQ_(x,y))){
 if(cljs.core.next(more)){
-var G__63374 = y;
-var G__63375 = cljs.core.first(more);
-var G__63376 = cljs.core.next(more);
-x = G__63374;
-y = G__63375;
-more = G__63376;
+var G__63373 = y;
+var G__63374 = cljs.core.first(more);
+var G__63375 = cljs.core.next(more);
+x = G__63373;
+y = G__63374;
+more = G__63375;
 continue;
 } else {
 return tick.core._LT__EQ_(y,cljs.core.first(more));

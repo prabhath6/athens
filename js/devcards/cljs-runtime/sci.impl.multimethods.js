@@ -8,13 +8,13 @@ goog.require('sci.impl.hierarchies');
 sci.impl.multimethods.check_valid_options = (function sci$impl$multimethods$check_valid_options(var_args){
 var args__4795__auto__ = [];
 var len__4789__auto___58588 = arguments.length;
-var i__4790__auto___58589 = (0);
+var i__4790__auto___58590 = (0);
 while(true){
-if((i__4790__auto___58589 < len__4789__auto___58588)){
-args__4795__auto__.push((arguments[i__4790__auto___58589]));
+if((i__4790__auto___58590 < len__4789__auto___58588)){
+args__4795__auto__.push((arguments[i__4790__auto___58590]));
 
-var G__58590 = (i__4790__auto___58589 + (1));
-i__4790__auto___58589 = G__58590;
+var G__58592 = (i__4790__auto___58590 + (1));
+i__4790__auto___58590 = G__58592;
 continue;
 } else {
 }
@@ -167,17 +167,17 @@ return cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.
 (sci.impl.multimethods.defmethod.cljs$lang$maxFixedArity = (4));
 
 /** @this {Function} */
-(sci.impl.multimethods.defmethod.cljs$lang$applyTo = (function (seq58581){
-var G__58582 = cljs.core.first(seq58581);
-var seq58581__$1 = cljs.core.next(seq58581);
-var G__58583 = cljs.core.first(seq58581__$1);
-var seq58581__$2 = cljs.core.next(seq58581__$1);
-var G__58584 = cljs.core.first(seq58581__$2);
-var seq58581__$3 = cljs.core.next(seq58581__$2);
-var G__58585 = cljs.core.first(seq58581__$3);
-var seq58581__$4 = cljs.core.next(seq58581__$3);
+(sci.impl.multimethods.defmethod.cljs$lang$applyTo = (function (seq58583){
+var G__58584 = cljs.core.first(seq58583);
+var seq58583__$1 = cljs.core.next(seq58583);
+var G__58585 = cljs.core.first(seq58583__$1);
+var seq58583__$2 = cljs.core.next(seq58583__$1);
+var G__58586 = cljs.core.first(seq58583__$2);
+var seq58583__$3 = cljs.core.next(seq58583__$2);
+var G__58587 = cljs.core.first(seq58583__$3);
+var seq58583__$4 = cljs.core.next(seq58583__$3);
 var self__4776__auto__ = this;
-return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__58582,G__58583,G__58584,G__58585,seq58581__$4);
+return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__58584,G__58585,G__58586,G__58587,seq58583__$4);
 }));
 
 
