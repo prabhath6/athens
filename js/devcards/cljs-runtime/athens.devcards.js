@@ -18,6 +18,7 @@ goog.require('athens.devcards.sci_boxes');
 goog.require('athens.devcards.spinner');
 goog.require('athens.devcards.style_guide');
 goog.require('athens.devcards.styling_with_stylefy');
+goog.require('athens.devcards.textinput');
 goog.require('athens.effects');
 goog.require('athens.events');
 goog.require('athens.listeners');

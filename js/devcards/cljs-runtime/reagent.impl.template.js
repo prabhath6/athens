@@ -176,24 +176,24 @@ return cljs.core.clj__GT_js(x);
 } else {
 if(cljs.core.ifn_QMARK_(x)){
 return (function() { 
-var G__31736__delegate = function (args){
+var G__31737__delegate = function (args){
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(x,args);
 };
-var G__31736 = function (var_args){
+var G__31737 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__31738__i = 0, G__31738__a = new Array(arguments.length -  0);
-while (G__31738__i < G__31738__a.length) {G__31738__a[G__31738__i] = arguments[G__31738__i + 0]; ++G__31738__i;}
-  args = new cljs.core.IndexedSeq(G__31738__a,0,null);
+var G__31739__i = 0, G__31739__a = new Array(arguments.length -  0);
+while (G__31739__i < G__31739__a.length) {G__31739__a[G__31739__i] = arguments[G__31739__i + 0]; ++G__31739__i;}
+  args = new cljs.core.IndexedSeq(G__31739__a,0,null);
 } 
-return G__31736__delegate.call(this,args);};
-G__31736.cljs$lang$maxFixedArity = 0;
-G__31736.cljs$lang$applyTo = (function (arglist__31739){
-var args = cljs.core.seq(arglist__31739);
-return G__31736__delegate(args);
+return G__31737__delegate.call(this,args);};
+G__31737.cljs$lang$maxFixedArity = 0;
+G__31737.cljs$lang$applyTo = (function (arglist__31740){
+var args = cljs.core.seq(arglist__31740);
+return G__31737__delegate(args);
 });
-G__31736.cljs$core$IFn$_invoke$arity$variadic = G__31736__delegate;
-return G__31736;
+G__31737.cljs$core$IFn$_invoke$arity$variadic = G__31737__delegate;
+return G__31737;
 })()
 ;
 } else {
@@ -447,11 +447,11 @@ var c = reagent.impl.component.as_class(tag);
 var jsprops = ({});
 (jsprops.argv = v);
 
-var temp__5739__auto___31763 = reagent.impl.template.key_from_vec(v);
-if((temp__5739__auto___31763 == null)){
+var temp__5739__auto___31764 = reagent.impl.template.key_from_vec(v);
+if((temp__5739__auto___31764 == null)){
 } else {
-var key_31765 = temp__5739__auto___31763;
-(jsprops.key = key_31765);
+var key_31769 = temp__5739__auto___31764;
+(jsprops.key = key_31769);
 }
 
 return module$node_modules$react$index.createElement(c,jsprops);

@@ -54,10 +54,10 @@ var gen_name = (function (result,name){
 if((!(cljs.core.contains_QMARK_(result,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),"#"].join(''))))){
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),"#"].join('');
 } else {
-return cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__45999_SHARP_){
-return (!(cljs.core.contains_QMARK_(result,p1__45999_SHARP_)));
-}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__45998_SHARP_){
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__45998_SHARP_),"#"].join('');
+return cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__45990_SHARP_){
+return (!(cljs.core.contains_QMARK_(result,p1__45990_SHARP_)));
+}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__45989_SHARP_){
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__45989_SHARP_),"#"].join('');
 }),cljs.core.iterate(cljs.core.inc,(2)))));
 }
 });
@@ -98,8 +98,8 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(result,sym_name,new_name);
 return result;
 }
 }
-}),mapping,cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.name,cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__46000_SHARP_){
-return (((p1__46000_SHARP_ instanceof cljs.core.Symbol)) && ((cljs.core.namespace(p1__46000_SHARP_) == null)));
+}),mapping,cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.name,cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__45994_SHARP_){
+return (((p1__45994_SHARP_ instanceof cljs.core.Symbol)) && ((cljs.core.namespace(p1__45994_SHARP_) == null)));
 }),debux.common.util.form_tree_seq(form))));
 });
 /**
@@ -412,6 +412,19 @@ if(cljs.core.integer_QMARK_(indent)){
 throw (new Error(["Assert failed: ",["indent was not correctly replaced for form ",cljs.core.prn_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([quoted_form], 0)),"\nThis is a bug, please report it to https://github.com/Day8/re-frame-debux"].join(''),"\n","(integer? indent)"].join('')));
 }
 
+debux.common.util.send_trace_BANG_(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"form","form",-1624062471),(function (){var G__46032 = quoted_form;
+var G__46033 = new cljs.core.Symbol(null,"dummy","dummy",-594669915,null);
+return (debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2 ? debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2(G__46032,G__46033) : debux.common.util.remove_d.call(null,G__46032,G__46033));
+})(),new cljs.core.Keyword(null,"result","result",1415092211),result,new cljs.core.Keyword(null,"indent-level","indent-level",-258835684),indent], null));
+
+return result;
+});
+debux.common.util.spy_last = (function debux$common$util$spy_last(quoted_form,indent,result){
+if(cljs.core.integer_QMARK_(indent)){
+} else {
+throw (new Error(["Assert failed: ",["indent was not correctly replaced for form ",cljs.core.prn_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([quoted_form], 0)),"\nThis is a bug, please report it to https://github.com/Day8/re-frame-debux"].join(''),"\n","(integer? indent)"].join('')));
+}
+
 debux.common.util.send_trace_BANG_(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"form","form",-1624062471),(function (){var G__46034 = quoted_form;
 var G__46035 = new cljs.core.Symbol(null,"dummy","dummy",-594669915,null);
 return (debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2 ? debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2(G__46034,G__46035) : debux.common.util.remove_d.call(null,G__46034,G__46035));
@@ -419,7 +432,10 @@ return (debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2 ? debux.common.
 
 return result;
 });
-debux.common.util.spy_last = (function debux$common$util$spy_last(quoted_form,indent,result){
+debux.common.util.spy_comp = (function debux$common$util$spy_comp(quoted_form,indent,form){
+return (function() { 
+var G__46070__delegate = function (arg){
+var result = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(form,arg);
 if(cljs.core.integer_QMARK_(indent)){
 } else {
 throw (new Error(["Assert failed: ",["indent was not correctly replaced for form ",cljs.core.prn_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([quoted_form], 0)),"\nThis is a bug, please report it to https://github.com/Day8/re-frame-debux"].join(''),"\n","(integer? indent)"].join('')));
@@ -431,38 +447,22 @@ return (debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2 ? debux.common.
 })(),new cljs.core.Keyword(null,"result","result",1415092211),result,new cljs.core.Keyword(null,"indent-level","indent-level",-258835684),indent], null));
 
 return result;
-});
-debux.common.util.spy_comp = (function debux$common$util$spy_comp(quoted_form,indent,form){
-return (function() { 
-var G__46072__delegate = function (arg){
-var result = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(form,arg);
-if(cljs.core.integer_QMARK_(indent)){
-} else {
-throw (new Error(["Assert failed: ",["indent was not correctly replaced for form ",cljs.core.prn_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([quoted_form], 0)),"\nThis is a bug, please report it to https://github.com/Day8/re-frame-debux"].join(''),"\n","(integer? indent)"].join('')));
-}
-
-debux.common.util.send_trace_BANG_(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"form","form",-1624062471),(function (){var G__46038 = quoted_form;
-var G__46039 = new cljs.core.Symbol(null,"dummy","dummy",-594669915,null);
-return (debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2 ? debux.common.util.remove_d.cljs$core$IFn$_invoke$arity$2(G__46038,G__46039) : debux.common.util.remove_d.call(null,G__46038,G__46039));
-})(),new cljs.core.Keyword(null,"result","result",1415092211),result,new cljs.core.Keyword(null,"indent-level","indent-level",-258835684),indent], null));
-
-return result;
 };
-var G__46072 = function (var_args){
+var G__46070 = function (var_args){
 var arg = null;
 if (arguments.length > 0) {
 var G__46073__i = 0, G__46073__a = new Array(arguments.length -  0);
 while (G__46073__i < G__46073__a.length) {G__46073__a[G__46073__i] = arguments[G__46073__i + 0]; ++G__46073__i;}
   arg = new cljs.core.IndexedSeq(G__46073__a,0,null);
 } 
-return G__46072__delegate.call(this,arg);};
-G__46072.cljs$lang$maxFixedArity = 0;
-G__46072.cljs$lang$applyTo = (function (arglist__46074){
+return G__46070__delegate.call(this,arg);};
+G__46070.cljs$lang$maxFixedArity = 0;
+G__46070.cljs$lang$applyTo = (function (arglist__46074){
 var arg = cljs.core.seq(arglist__46074);
-return G__46072__delegate(arg);
+return G__46070__delegate(arg);
 });
-G__46072.cljs$core$IFn$_invoke$arity$variadic = G__46072__delegate;
-return G__46072;
+G__46070.cljs$core$IFn$_invoke$arity$variadic = G__46070__delegate;
+return G__46070;
 })()
 ;
 });

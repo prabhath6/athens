@@ -24,9 +24,9 @@ return null;
 }
 });
 athens.devcards.data_browser.headings = (function athens$devcards$data_browser$headings(data,mode){
-var G__57984 = mode;
-var G__57984__$1 = (((G__57984 instanceof cljs.core.Keyword))?G__57984.fqn:null);
-switch (G__57984__$1) {
+var G__57987 = mode;
+var G__57987__$1 = (((G__57987 instanceof cljs.core.Keyword))?G__57987.fqn:null);
+switch (G__57987__$1) {
 case "coll":
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["idx","val"], null);
 
@@ -44,7 +44,7 @@ return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVect
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__57984__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__57987__$1)].join('')));
 
 }
 });
