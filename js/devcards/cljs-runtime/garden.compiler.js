@@ -628,8 +628,8 @@ if((i__40931 < size__4581__auto__)){
 var vendor = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4580__auto__,i__40931);
 cljs.core.chunk_append(b__40932,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [garden.util.vendor_prefix(vendor,cljs.core.name(p)),v], null));
 
-var G__41042 = (i__40931 + (1));
-i__40931 = G__41042;
+var G__41043 = (i__40931 + (1));
+i__40931 = G__41043;
 continue;
 } else {
 return true;
@@ -994,12 +994,12 @@ return cljs.core.map.cljs$core$IFn$_invoke$arity$2(garden.compiler.render_css,th
 
 goog.object.set(garden.compiler.CSSRenderer,"number",true);
 
-var G__40988_41069 = garden.compiler.render_css;
-var G__40989_41070 = "number";
-var G__40990_41071 = (function (this$){
+var G__40988_41070 = garden.compiler.render_css;
+var G__40989_41071 = "number";
+var G__40990_41072 = (function (this$){
 return cljs.core.str.cljs$core$IFn$_invoke$arity$1(this$);
 });
-goog.object.set(G__40988_41069,G__40989_41070,G__40990_41071);
+goog.object.set(G__40988_41070,G__40989_41071,G__40990_41072);
 
 (garden.types.CSSFunction.prototype.garden$compiler$CSSRenderer$ = cljs.core.PROTOCOL_SENTINEL);
 

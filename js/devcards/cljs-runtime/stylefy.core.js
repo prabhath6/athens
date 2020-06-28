@@ -107,8 +107,8 @@ return stylefy.impl.styles.use_style_BANG_(style,options,stylefy.impl.dom.save_s
  * take a look at sub-style function.
  */
 stylefy.core.use_sub_style = (function stylefy$core$use_sub_style(var_args){
-var G__42154 = arguments.length;
-switch (G__42154) {
+var G__42155 = arguments.length;
+switch (G__42155) {
 case 2:
 return stylefy.core.use_sub_style.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -178,11 +178,11 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(stylefy.impl.styles.sub_sty
 (stylefy.core.sub_style.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(stylefy.core.sub_style.cljs$lang$applyTo = (function (seq42178){
-var G__42179 = cljs.core.first(seq42178);
-var seq42178__$1 = cljs.core.next(seq42178);
+(stylefy.core.sub_style.cljs$lang$applyTo = (function (seq42182){
+var G__42183 = cljs.core.first(seq42182);
+var seq42182__$1 = cljs.core.next(seq42182);
 var self__4776__auto__ = this;
-return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42179,seq42178__$1);
+return self__4776__auto__.cljs$core$IFn$_invoke$arity$variadic(G__42183,seq42182__$1);
 }));
 
 /**
@@ -276,14 +276,14 @@ return null;
  */
 stylefy.core.keyframes = (function stylefy$core$keyframes(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___42202 = arguments.length;
-var i__4790__auto___42203 = (0);
+var len__4789__auto___42194 = arguments.length;
+var i__4790__auto___42195 = (0);
 while(true){
-if((i__4790__auto___42203 < len__4789__auto___42202)){
-args__4795__auto__.push((arguments[i__4790__auto___42203]));
+if((i__4790__auto___42195 < len__4789__auto___42194)){
+args__4795__auto__.push((arguments[i__4790__auto___42195]));
 
-var G__42205 = (i__4790__auto___42203 + (1));
-i__4790__auto___42203 = G__42205;
+var G__42196 = (i__4790__auto___42195 + (1));
+i__4790__auto___42195 = G__42196;
 continue;
 } else {
 }

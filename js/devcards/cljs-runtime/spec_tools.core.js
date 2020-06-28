@@ -238,14 +238,14 @@ throw cljs.core.missing_protocol("Transformer.-decoder",this$);
  */
 spec_tools.core.type_transformer = (function spec_tools$core$type_transformer(var_args){
 var args__4795__auto__ = [];
-var len__4789__auto___48198 = arguments.length;
-var i__4790__auto___48199 = (0);
+var len__4789__auto___48193 = arguments.length;
+var i__4790__auto___48194 = (0);
 while(true){
-if((i__4790__auto___48199 < len__4789__auto___48198)){
-args__4795__auto__.push((arguments[i__4790__auto___48199]));
+if((i__4790__auto___48194 < len__4789__auto___48193)){
+args__4795__auto__.push((arguments[i__4790__auto___48194]));
 
-var G__48200 = (i__4790__auto___48199 + (1));
-i__4790__auto___48199 = G__48200;
+var G__48195 = (i__4790__auto___48194 + (1));
+i__4790__auto___48194 = G__48195;
 continue;
 } else {
 }

@@ -184,8 +184,8 @@ reitit.coercion.spec.coerce_response_QMARK_.cljs$core$IMultiFn$_add_method$arity
 return true;
 }));
 reitit.coercion.spec.default_options = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"coerce-response?","coerce-response?",1125033091),reitit.coercion.spec.coerce_response_QMARK_,new cljs.core.Keyword(null,"transformers","transformers",-734201565),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"body","body",-2049205669),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"default","default",-1987822328),reitit.coercion.spec.strip_extra_keys_transformer,new cljs.core.Keyword(null,"formats","formats",-1397890976),new cljs.core.PersistentArrayMap(null, 1, ["application/json",reitit.coercion.spec.json_transformer], null)], null),new cljs.core.Keyword(null,"string","string",-1989541586),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),reitit.coercion.spec.string_transformer], null),new cljs.core.Keyword(null,"response","response",-1068424192),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),reitit.coercion.spec.no_op_transformer], null)], null)], null);
-reitit.coercion.spec.create = (function reitit$coercion$spec$create(p__57645){
-var map__57647 = p__57645;
+reitit.coercion.spec.create = (function reitit$coercion$spec$create(p__57646){
+var map__57647 = p__57646;
 var map__57647__$1 = (((((!((map__57647 == null))))?(((((map__57647.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__57647.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__57647):map__57647);
 var opts = map__57647__$1;
 var transformers = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__57647__$1,new cljs.core.Keyword(null,"transformers","transformers",-734201565));
@@ -199,8 +199,8 @@ if((typeof reitit !== 'undefined') && (typeof reitit.coercion !== 'undefined') &
  * @implements {cljs.core.IWithMeta}
  * @implements {reitit.coercion.Coercion}
 */
-reitit.coercion.spec.t_reitit$coercion$spec57649 = (function (p__57645,map__57647,opts,transformers,coerce_response_QMARK_,meta57650){
-this.p__57645 = p__57645;
+reitit.coercion.spec.t_reitit$coercion$spec57649 = (function (p__57646,map__57647,opts,transformers,coerce_response_QMARK_,meta57650){
+this.p__57646 = p__57646;
 this.map__57647 = map__57647;
 this.opts = opts;
 this.transformers = transformers;
@@ -212,7 +212,7 @@ this.cljs$lang$protocol_mask$partition1$ = 0;
 (reitit.coercion.spec.t_reitit$coercion$spec57649.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_57651,meta57650__$1){
 var self__ = this;
 var _57651__$1 = this;
-return (new reitit.coercion.spec.t_reitit$coercion$spec57649(self__.p__57645,self__.map__57647,self__.opts,self__.transformers,self__.coerce_response_QMARK_,meta57650__$1));
+return (new reitit.coercion.spec.t_reitit$coercion$spec57649(self__.p__57646,self__.map__57647,self__.opts,self__.transformers,self__.coerce_response_QMARK_,meta57650__$1));
 }));
 
 (reitit.coercion.spec.t_reitit$coercion$spec57649.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_57651){
@@ -265,8 +265,8 @@ var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__57660,(0),null);
 var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__57660,(1),null);
 cljs.core.chunk_append(b__57659,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,this$__$1.reitit$coercion$Coercion$_compile_model$arity$3(null,v,null)], null));
 
-var G__57690 = (i__57658 + (1));
-i__57658 = G__57690;
+var G__57692 = (i__57658 + (1));
+i__57658 = G__57692;
 continue;
 } else {
 return true;
@@ -437,7 +437,7 @@ return null;
 }));
 
 (reitit.coercion.spec.t_reitit$coercion$spec57649.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p__57645","p__57645",-1952486887,null),new cljs.core.Symbol(null,"map__57647","map__57647",-1653881300,null),new cljs.core.Symbol(null,"opts","opts",1795607228,null),new cljs.core.Symbol(null,"transformers","transformers",906329962,null),new cljs.core.Symbol(null,"coerce-response?","coerce-response?",-1529402678,null),new cljs.core.Symbol(null,"meta57650","meta57650",629704769,null)], null);
+return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p__57646","p__57646",-874331337,null),new cljs.core.Symbol(null,"map__57647","map__57647",-1653881300,null),new cljs.core.Symbol(null,"opts","opts",1795607228,null),new cljs.core.Symbol(null,"transformers","transformers",906329962,null),new cljs.core.Symbol(null,"coerce-response?","coerce-response?",-1529402678,null),new cljs.core.Symbol(null,"meta57650","meta57650",629704769,null)], null);
 }));
 
 (reitit.coercion.spec.t_reitit$coercion$spec57649.cljs$lang$type = true);
@@ -451,13 +451,13 @@ return cljs.core._write(writer__4429__auto__,"reitit.coercion.spec/t_reitit$coer
 /**
  * Positional factory function for reitit.coercion.spec/t_reitit$coercion$spec57649.
  */
-reitit.coercion.spec.__GT_t_reitit$coercion$spec57649 = (function reitit$coercion$spec$create_$___GT_t_reitit$coercion$spec57649(p__57645__$1,map__57647__$2,opts__$1,transformers__$1,coerce_response_QMARK___$1,meta57650){
-return (new reitit.coercion.spec.t_reitit$coercion$spec57649(p__57645__$1,map__57647__$2,opts__$1,transformers__$1,coerce_response_QMARK___$1,meta57650));
+reitit.coercion.spec.__GT_t_reitit$coercion$spec57649 = (function reitit$coercion$spec$create_$___GT_t_reitit$coercion$spec57649(p__57646__$1,map__57647__$2,opts__$1,transformers__$1,coerce_response_QMARK___$1,meta57650){
+return (new reitit.coercion.spec.t_reitit$coercion$spec57649(p__57646__$1,map__57647__$2,opts__$1,transformers__$1,coerce_response_QMARK___$1,meta57650));
 });
 
 }
 
-return (new reitit.coercion.spec.t_reitit$coercion$spec57649(p__57645,map__57647__$1,opts,transformers,coerce_response_QMARK_,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("reitit.coercion","coercion","reitit.coercion/coercion",-866612966)], null)));
+return (new reitit.coercion.spec.t_reitit$coercion$spec57649(p__57646,map__57647__$1,opts,transformers,coerce_response_QMARK_,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("reitit.coercion","coercion","reitit.coercion/coercion",-866612966)], null)));
 });
 reitit.coercion.spec.coercion = reitit.coercion.spec.create(reitit.coercion.spec.default_options);
 

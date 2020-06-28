@@ -248,8 +248,8 @@ var in$ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48567,(0),null);
 var spec = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48567,(1),null);
 return (spec_tools.swagger.core.extract_parameter.cljs$core$IFn$_invoke$arity$2 ? spec_tools.swagger.core.extract_parameter.cljs$core$IFn$_invoke$arity$2(in$,spec) : spec_tools.swagger.core.extract_parameter.call(null,in$,spec));
 }),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([v], 0));
-var merged = cljs.core.vec(cljs.core.reverse(cljs.core.first(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (p__48571,p){
-var vec__48572 = p__48571;
+var merged = cljs.core.vec(cljs.core.reverse(cljs.core.first(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (p__48570,p){
+var vec__48572 = p__48570;
 var ps = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48572,(0),null);
 var cache = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__48572,(1),null);
 var acc__$1 = vec__48572;
