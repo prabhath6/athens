@@ -184,8 +184,8 @@ continue;
 
 break;
 case "hide":
-return instaparse.combinators_source.hide((function (){var G__56926 = (instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1(tree) : instaparse.cfg.content.call(null,tree));
-return (instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1(G__56926) : instaparse.cfg.build_rule.call(null,G__56926));
+return instaparse.combinators_source.hide((function (){var G__56925 = (instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1(tree) : instaparse.cfg.content.call(null,tree));
+return (instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1(G__56925) : instaparse.cfg.build_rule.call(null,G__56925));
 })());
 
 break;
@@ -202,14 +202,14 @@ return instaparse.combinators_source.regexp(instaparse.cfg.process_regexp((insta
 
 break;
 case "opt":
-return instaparse.combinators_source.opt((function (){var G__56927 = (instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1(tree) : instaparse.cfg.content.call(null,tree));
-return (instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1(G__56927) : instaparse.cfg.build_rule.call(null,G__56927));
+return instaparse.combinators_source.opt((function (){var G__56926 = (instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1(tree) : instaparse.cfg.content.call(null,tree));
+return (instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1(G__56926) : instaparse.cfg.build_rule.call(null,G__56926));
 })());
 
 break;
 case "star":
-return instaparse.combinators_source.star((function (){var G__56928 = (instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1(tree) : instaparse.cfg.content.call(null,tree));
-return (instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1(G__56928) : instaparse.cfg.build_rule.call(null,G__56928));
+return instaparse.combinators_source.star((function (){var G__56927 = (instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.content.cljs$core$IFn$_invoke$arity$1(tree) : instaparse.cfg.content.call(null,tree));
+return (instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1 ? instaparse.cfg.build_rule.cljs$core$IFn$_invoke$arity$1(G__56927) : instaparse.cfg.build_rule.call(null,G__56927));
 })());
 
 break;

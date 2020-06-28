@@ -300,9 +300,9 @@ re_frame.trace.run_tracing_callbacks_BANG_(end__32788__auto___34705);
 
 if(reagent.impl.batching.render_queue.scheduled_QMARK_ === false){
 if(re_frame.trace.is_trace_enabled_QMARK_()){
-var _STAR_current_trace_STAR__orig_val__34662 = re_frame.trace._STAR_current_trace_STAR_;
-var _STAR_current_trace_STAR__temp_val__34663 = re_frame.trace.start_trace(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op-type","op-type",-1636141668),new cljs.core.Keyword("reagent","quiescent","reagent/quiescent",-16138681)], null));
-(re_frame.trace._STAR_current_trace_STAR_ = _STAR_current_trace_STAR__temp_val__34663);
+var _STAR_current_trace_STAR__orig_val__34665 = re_frame.trace._STAR_current_trace_STAR_;
+var _STAR_current_trace_STAR__temp_val__34666 = re_frame.trace.start_trace(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op-type","op-type",-1636141668),new cljs.core.Keyword("reagent","quiescent","reagent/quiescent",-16138681)], null));
+(re_frame.trace._STAR_current_trace_STAR_ = _STAR_current_trace_STAR__temp_val__34666);
 
 try{try{return null;
 }finally {if(re_frame.trace.is_trace_enabled_QMARK_()){
@@ -313,7 +313,7 @@ cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(re_frame.trace.traces,cljs.co
 re_frame.trace.run_tracing_callbacks_BANG_(end__32788__auto___34707);
 } else {
 }
-}}finally {(re_frame.trace._STAR_current_trace_STAR_ = _STAR_current_trace_STAR__orig_val__34662);
+}}finally {(re_frame.trace._STAR_current_trace_STAR_ = _STAR_current_trace_STAR__orig_val__34665);
 }} else {
 return null;
 }

@@ -50,12 +50,12 @@ return dashed;
 } else {
 var name_str = cljs.core.name(dashed);
 var name_str__$1 = clojure.string.replace(name_str,/(unsafe|UNSAFE)[-_]/,"UNSAFE_");
-var vec__32118 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(name_str__$1,/-/);
-var seq__32119 = cljs.core.seq(vec__32118);
-var first__32120 = cljs.core.first(seq__32119);
-var seq__32119__$1 = cljs.core.next(seq__32119);
-var start = first__32120;
-var parts = seq__32119__$1;
+var vec__32104 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(name_str__$1,/-/);
+var seq__32105 = cljs.core.seq(vec__32104);
+var first__32106 = cljs.core.first(seq__32105);
+var seq__32105__$1 = cljs.core.next(seq__32105);
+var start = first__32106;
+var parts = seq__32105__$1;
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.str,start,cljs.core.map.cljs$core$IFn$_invoke$arity$2(reagent.impl.util.capitalize,parts));
 }
 });

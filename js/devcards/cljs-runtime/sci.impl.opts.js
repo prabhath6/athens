@@ -16,13 +16,13 @@ sci.impl.opts.presets = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core
 sci.impl.opts.process_permissions = (function sci$impl$opts$process_permissions(var_args){
 var args__4795__auto__ = [];
 var len__4789__auto___59072 = arguments.length;
-var i__4790__auto___59074 = (0);
+var i__4790__auto___59073 = (0);
 while(true){
-if((i__4790__auto___59074 < len__4789__auto___59072)){
-args__4795__auto__.push((arguments[i__4790__auto___59074]));
+if((i__4790__auto___59073 < len__4789__auto___59072)){
+args__4795__auto__.push((arguments[i__4790__auto___59073]));
 
-var G__59077 = (i__4790__auto___59074 + (1));
-i__4790__auto___59074 = G__59077;
+var G__59074 = (i__4790__auto___59073 + (1));
+i__4790__auto___59073 = G__59074;
 continue;
 } else {
 }
@@ -40,9 +40,9 @@ return cljs.core.not_empty(cljs.core.into.cljs$core$IFn$_invoke$arity$3(cljs.cor
 (sci.impl.opts.process_permissions.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(sci.impl.opts.process_permissions.cljs$lang$applyTo = (function (seq59056){
+(sci.impl.opts.process_permissions.cljs$lang$applyTo = (function (seq59054){
 var self__4777__auto__ = this;
-return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq59056));
+return self__4777__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq59054));
 }));
 
 sci.impl.opts.default_classes = new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Symbol(null,"Error","Error",-1692662047,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"class","class",-2030961996),Error,new cljs.core.Keyword(null,"constructor","constructor",-1953928811),(function() {

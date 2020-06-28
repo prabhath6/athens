@@ -1046,41 +1046,41 @@ return null;
 if(cljs.core.truth_(current_ns)){
 if(cljs.core.truth_(ns__$1)){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(ns__$1,current_ns)){
-var G__30743 = ns__$1;
-var G__30744 = cljs.core.next(pair_seq__$1);
-var G__30745 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons((function (){var G__30535 = (function (){var G__30536 = strip_ns((rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1(k) : rewrite_clj.zip.sexpr.call(null,k)));
+var G__30739 = ns__$1;
+var G__30740 = cljs.core.next(pair_seq__$1);
+var G__30741 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons((function (){var G__30535 = (function (){var G__30536 = strip_ns((rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1(k) : rewrite_clj.zip.sexpr.call(null,k)));
 return (rewrite_clj.node.token_node.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.node.token_node.cljs$core$IFn$_invoke$arity$1(G__30536) : rewrite_clj.node.token_node.call(null,G__30536));
 })();
 return (zprint.zutil.edn_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.edn_STAR_.cljs$core$IFn$_invoke$arity$1(G__30535) : zprint.zutil.edn_STAR_.call(null,G__30535));
 })(),rest_of_pair));
-ns__$1 = G__30743;
-pair_seq__$1 = G__30744;
-out = G__30745;
+ns__$1 = G__30739;
+pair_seq__$1 = G__30740;
+out = G__30741;
 continue;
 } else {
 return null;
 }
 } else {
-var G__30747 = current_ns;
-var G__30748 = cljs.core.next(pair_seq__$1);
-var G__30749 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons((function (){var G__30537 = (function (){var G__30538 = strip_ns((rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1(k) : rewrite_clj.zip.sexpr.call(null,k)));
+var G__30746 = current_ns;
+var G__30747 = cljs.core.next(pair_seq__$1);
+var G__30748 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons((function (){var G__30537 = (function (){var G__30538 = strip_ns((rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.sexpr.cljs$core$IFn$_invoke$arity$1(k) : rewrite_clj.zip.sexpr.call(null,k)));
 return (rewrite_clj.node.token_node.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.node.token_node.cljs$core$IFn$_invoke$arity$1(G__30538) : rewrite_clj.node.token_node.call(null,G__30538));
 })();
 return (zprint.zutil.edn_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.edn_STAR_.cljs$core$IFn$_invoke$arity$1(G__30537) : zprint.zutil.edn_STAR_.call(null,G__30537));
 })(),rest_of_pair));
-ns__$1 = G__30747;
-pair_seq__$1 = G__30748;
-out = G__30749;
+ns__$1 = G__30746;
+pair_seq__$1 = G__30747;
+out = G__30748;
 continue;
 }
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(pair),(1))){
-var G__30754 = ns__$1;
-var G__30755 = cljs.core.next(pair_seq__$1);
-var G__30756 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,pair);
-ns__$1 = G__30754;
-pair_seq__$1 = G__30755;
-out = G__30756;
+var G__30750 = ns__$1;
+var G__30751 = cljs.core.next(pair_seq__$1);
+var G__30752 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,pair);
+ns__$1 = G__30750;
+pair_seq__$1 = G__30751;
+out = G__30752;
 continue;
 } else {
 return null;
