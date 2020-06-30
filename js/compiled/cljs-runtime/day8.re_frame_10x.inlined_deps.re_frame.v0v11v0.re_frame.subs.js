@@ -24,57 +24,57 @@ day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.subs.query__GT_reaction
  *   components won't have been cleaned up correctly. So this forces the issue.
  */
 day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.subs.clear_subscription_cache_BANG_ = (function day8$re_frame_10x$inlined_deps$re_frame$v0v11v0$re_frame$subs$clear_subscription_cache_BANG_(){
-var seq__27998_28072 = cljs.core.seq(cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.subs.query__GT_reaction));
-var chunk__27999_28073 = null;
-var count__28000_28074 = (0);
-var i__28001_28075 = (0);
+var seq__27999_28072 = cljs.core.seq(cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.subs.query__GT_reaction));
+var chunk__28000_28073 = null;
+var count__28001_28074 = (0);
+var i__28002_28075 = (0);
 while(true){
-if((i__28001_28075 < count__28000_28074)){
-var vec__28009_28076 = chunk__27999_28073.cljs$core$IIndexed$_nth$arity$2(null,i__28001_28075);
+if((i__28002_28075 < count__28001_28074)){
+var vec__28009_28076 = chunk__28000_28073.cljs$core$IIndexed$_nth$arity$2(null,i__28002_28075);
 var k_28077 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28009_28076,(0),null);
 var rxn_28078 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28009_28076,(1),null);
 day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.dispose_BANG_(rxn_28078);
 
 
-var G__28079 = seq__27998_28072;
-var G__28080 = chunk__27999_28073;
-var G__28081 = count__28000_28074;
-var G__28082 = (i__28001_28075 + (1));
-seq__27998_28072 = G__28079;
-chunk__27999_28073 = G__28080;
-count__28000_28074 = G__28081;
-i__28001_28075 = G__28082;
+var G__28079 = seq__27999_28072;
+var G__28080 = chunk__28000_28073;
+var G__28081 = count__28001_28074;
+var G__28082 = (i__28002_28075 + (1));
+seq__27999_28072 = G__28079;
+chunk__28000_28073 = G__28080;
+count__28001_28074 = G__28081;
+i__28002_28075 = G__28082;
 continue;
 } else {
-var temp__5735__auto___28083 = cljs.core.seq(seq__27998_28072);
+var temp__5735__auto___28083 = cljs.core.seq(seq__27999_28072);
 if(temp__5735__auto___28083){
-var seq__27998_28084__$1 = temp__5735__auto___28083;
-if(cljs.core.chunked_seq_QMARK_(seq__27998_28084__$1)){
-var c__4609__auto___28085 = cljs.core.chunk_first(seq__27998_28084__$1);
-var G__28086 = cljs.core.chunk_rest(seq__27998_28084__$1);
+var seq__27999_28084__$1 = temp__5735__auto___28083;
+if(cljs.core.chunked_seq_QMARK_(seq__27999_28084__$1)){
+var c__4609__auto___28085 = cljs.core.chunk_first(seq__27999_28084__$1);
+var G__28086 = cljs.core.chunk_rest(seq__27999_28084__$1);
 var G__28087 = c__4609__auto___28085;
 var G__28088 = cljs.core.count(c__4609__auto___28085);
 var G__28089 = (0);
-seq__27998_28072 = G__28086;
-chunk__27999_28073 = G__28087;
-count__28000_28074 = G__28088;
-i__28001_28075 = G__28089;
+seq__27999_28072 = G__28086;
+chunk__28000_28073 = G__28087;
+count__28001_28074 = G__28088;
+i__28002_28075 = G__28089;
 continue;
 } else {
-var vec__28012_28090 = cljs.core.first(seq__27998_28084__$1);
+var vec__28012_28090 = cljs.core.first(seq__27999_28084__$1);
 var k_28091 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28012_28090,(0),null);
 var rxn_28092 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28012_28090,(1),null);
 day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.dispose_BANG_(rxn_28092);
 
 
-var G__28093 = cljs.core.next(seq__27998_28084__$1);
+var G__28093 = cljs.core.next(seq__27999_28084__$1);
 var G__28094 = null;
 var G__28095 = (0);
 var G__28096 = (0);
-seq__27998_28072 = G__28093;
-chunk__27999_28073 = G__28094;
-count__28000_28074 = G__28095;
-i__28001_28075 = G__28096;
+seq__27999_28072 = G__28093;
+chunk__28000_28073 = G__28094;
+count__28001_28074 = G__28095;
+i__28002_28075 = G__28096;
 continue;
 }
 } else {
@@ -392,11 +392,11 @@ return cljs.core.deref(cljs.core.deref(sub));
 }
 }
 }finally {if(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.is_trace_enabled_QMARK_()){
-var end__27872__auto___28116 = day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.now();
-var duration__27873__auto___28117 = (end__27872__auto___28116 - new cljs.core.Keyword(null,"start","start",-355208981).cljs$core$IFn$_invoke$arity$1(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace._STAR_current_trace_STAR_));
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.traces,cljs.core.conj,cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace._STAR_current_trace_STAR_,new cljs.core.Keyword(null,"duration","duration",1444101068),duration__27873__auto___28117,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"end","end",-268185958),day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.now()], 0)));
+var end__27872__auto___28117 = day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.now();
+var duration__27873__auto___28118 = (end__27872__auto___28117 - new cljs.core.Keyword(null,"start","start",-355208981).cljs$core$IFn$_invoke$arity$1(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace._STAR_current_trace_STAR_));
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.traces,cljs.core.conj,cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace._STAR_current_trace_STAR_,new cljs.core.Keyword(null,"duration","duration",1444101068),duration__27873__auto___28118,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"end","end",-268185958),day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.now()], 0)));
 
-day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.run_tracing_callbacks_BANG_(end__27872__auto___28116);
+day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.run_tracing_callbacks_BANG_(end__27872__auto___28117);
 } else {
 }
 }}finally {(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace._STAR_current_trace_STAR_ = _STAR_current_trace_STAR__orig_val__28023);
@@ -721,9 +721,9 @@ return f;
 
 break;
 case (2):
-var vec__28050 = input_args;
-var marker = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28050,(0),null);
-var vec = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28050,(1),null);
+var vec__28049 = input_args;
+var marker = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28049,(0),null);
+var vec = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28049,(1),null);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"<-","<-",760412998),marker)){
 } else {
 day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"error","error",-978969032),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([err_header,"expected :<-, got:",marker], 0));
