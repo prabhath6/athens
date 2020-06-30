@@ -279,10 +279,10 @@ var h__4297__auto__ = self__.__hash;
 if((!((h__4297__auto__ == null)))){
 return h__4297__auto__;
 } else {
-var h__4297__auto____$1 = (function (){var fexpr__49858 = (function (coll__4436__auto__){
+var h__4297__auto____$1 = (function (){var fexpr__49855 = (function (coll__4436__auto__){
 return (-537525465 ^ cljs.core.hash_unordered_coll(coll__4436__auto__));
 });
-return fexpr__49858(this__4435__auto____$1);
+return fexpr__49855(this__4435__auto____$1);
 })();
 (self__.__hash = h__4297__auto____$1);
 
@@ -757,8 +757,8 @@ var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__49916,(1),null);
 if(cljs.core.truth_(v)){
 return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,reitit.coercion.request_coercer(coercion,k,v,opts)], null),reitit$coercion$request_coercers_$_iter__49909(cljs.core.rest(s__49910__$2)));
 } else {
-var G__49992 = cljs.core.rest(s__49910__$2);
-s__49910__$1 = G__49992;
+var G__49995 = cljs.core.rest(s__49910__$2);
+s__49910__$1 = G__49995;
 continue;
 }
 }
@@ -795,12 +795,12 @@ var body = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__49926__$1,new cljs.c
 if(cljs.core.truth_(body)){
 cljs.core.chunk_append(b__49922,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [status,reitit.coercion.response_coercer(coercion,body,opts)], null));
 
-var G__49993 = (i__49921 + (1));
-i__49921 = G__49993;
+var G__49999 = (i__49921 + (1));
+i__49921 = G__49999;
 continue;
 } else {
-var G__49994 = (i__49921 + (1));
-i__49921 = G__49994;
+var G__50000 = (i__49921 + (1));
+i__49921 = G__50000;
 continue;
 }
 } else {
@@ -822,8 +822,8 @@ var body = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__49931__$1,new cljs.c
 if(cljs.core.truth_(body)){
 return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [status,reitit.coercion.response_coercer(coercion,body,opts)], null),reitit$coercion$response_coercers_$_iter__49919(cljs.core.rest(s__49920__$2)));
 } else {
-var G__49995 = cljs.core.rest(s__49920__$2);
-s__49920__$1 = G__49995;
+var G__50001 = cljs.core.rest(s__49920__$2);
+s__49920__$1 = G__50001;
 continue;
 }
 }

@@ -159,9 +159,9 @@ var count__50444_50480 = (0);
 var i__50445_50481 = (0);
 while(true){
 if((i__50445_50481 < count__50444_50480)){
-var vec__50458_50482 = chunk__50443_50479.cljs$core$IIndexed$_nth$arity$2(null,i__50445_50481);
-var tag_50483 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50458_50482,(0),null);
-var read_fn_50484 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50458_50482,(1),null);
+var vec__50452_50482 = chunk__50443_50479.cljs$core$IIndexed$_nth$arity$2(null,i__50445_50481);
+var tag_50483 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50452_50482,(0),null);
+var read_fn_50484 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50452_50482,(1),null);
 cljs.reader.register_tag_parser_BANG_(tag_50483,read_fn_50484);
 
 
@@ -190,9 +190,9 @@ count__50444_50480 = G__50494;
 i__50445_50481 = G__50495;
 continue;
 } else {
-var vec__50463_50496 = cljs.core.first(seq__50442_50490__$1);
-var tag_50497 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50463_50496,(0),null);
-var read_fn_50498 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50463_50496,(1),null);
+var vec__50455_50496 = cljs.core.first(seq__50442_50490__$1);
+var tag_50497 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50455_50496,(0),null);
+var read_fn_50498 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50455_50496,(1),null);
 cljs.reader.register_tag_parser_BANG_(tag_50497,read_fn_50498);
 
 

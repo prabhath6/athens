@@ -138,10 +138,10 @@ if(reagent.impl.util.named_QMARK_(k)){
 var temp__5737__auto__ = reagent.impl.template.cache_get(reagent.impl.template.custom_prop_name_cache,cljs.core.name(k));
 if((temp__5737__auto__ == null)){
 var v = reagent.impl.util.dash_to_prop_name(k);
-var G__31682_31725 = reagent.impl.template.custom_prop_name_cache;
-var G__31683_31726 = cljs.core.name(k);
-var G__31684_31727 = v;
-goog.object.set(G__31682_31725,G__31683_31726,G__31684_31727);
+var G__31682_31728 = reagent.impl.template.custom_prop_name_cache;
+var G__31683_31729 = cljs.core.name(k);
+var G__31684_31730 = v;
+goog.object.set(G__31682_31728,G__31683_31729,G__31684_31730);
 
 return v;
 } else {
@@ -447,10 +447,10 @@ var c = reagent.impl.component.as_class(tag);
 var jsprops = ({});
 (jsprops.argv = v);
 
-var temp__5739__auto___31764 = reagent.impl.template.key_from_vec(v);
-if((temp__5739__auto___31764 == null)){
+var temp__5739__auto___31768 = reagent.impl.template.key_from_vec(v);
+if((temp__5739__auto___31768 == null)){
 } else {
-var key_31769 = temp__5739__auto___31764;
+var key_31769 = temp__5739__auto___31768;
 (jsprops.key = key_31769);
 }
 
