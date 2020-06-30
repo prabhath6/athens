@@ -119,10 +119,10 @@ return (fexpr__30666.cljs$core$IFn$_invoke$arity$2 ? fexpr__30666.cljs$core$IFn$
 var db__$4 = (cljs.core.truth_(with$)?new cljs.core.Keyword(null,"db-after","db-after",-571884666).cljs$core$IFn$_invoke$arity$1((function (){var fexpr__30667 = new cljs.core.Keyword(null,"with","with",-1536296876).cljs$core$IFn$_invoke$arity$1(dcfg);
 return (fexpr__30667.cljs$core$IFn$_invoke$arity$2 ? fexpr__30667.cljs$core$IFn$_invoke$arity$2(db__$3,with$) : fexpr__30667.call(null,db__$3,with$));
 })()):db__$3);
-var db__$5 = (cljs.core.truth_(filter)?(function (){var G__30669 = db__$4;
-var G__30670 = (((filter instanceof cljs.core.Symbol))?null:filter);
-var fexpr__30668 = new cljs.core.Keyword(null,"filter","filter",-948537934).cljs$core$IFn$_invoke$arity$1(dcfg);
-return (fexpr__30668.cljs$core$IFn$_invoke$arity$2 ? fexpr__30668.cljs$core$IFn$_invoke$arity$2(G__30669,G__30670) : fexpr__30668.call(null,G__30669,G__30670));
+var db__$5 = (cljs.core.truth_(filter)?(function (){var G__30670 = db__$4;
+var G__30671 = (((filter instanceof cljs.core.Symbol))?null:filter);
+var fexpr__30669 = new cljs.core.Keyword(null,"filter","filter",-948537934).cljs$core$IFn$_invoke$arity$1(dcfg);
+return (fexpr__30669.cljs$core$IFn$_invoke$arity$2 ? fexpr__30669.cljs$core$IFn$_invoke$arity$2(G__30670,G__30671) : fexpr__30669.call(null,G__30670,G__30671));
 })():db__$4);
 return db__$5;
 }));

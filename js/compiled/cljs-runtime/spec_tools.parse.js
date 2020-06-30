@@ -24,8 +24,8 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("cljs.spec
 return null;
 } else {
 if(cljs.core.qualified_keyword_QMARK_(x)){
-var G__55059 = cljs.spec.alpha.form(cljs.spec.alpha.get_spec(x));
-x = G__55059;
+var G__55063 = cljs.spec.alpha.form(cljs.spec.alpha.get_spec(x));
+x = G__55063;
 continue;
 } else {
 if((x instanceof cljs.core.Symbol)){
@@ -39,8 +39,8 @@ var G__55035 = x;
 return (spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2 ? spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2(G__55034,G__55035) : spec_tools.parse.parse_form.call(null,G__55034,G__55035));
 } else {
 if(cljs.core.truth_(cljs.spec.alpha.spec_QMARK_(x))){
-var G__55060 = cljs.spec.alpha.form(x);
-x = G__55060;
+var G__55064 = cljs.spec.alpha.form(x);
+x = G__55064;
 continue;
 } else {
 if(cljs.core.ifn_QMARK_(x)){

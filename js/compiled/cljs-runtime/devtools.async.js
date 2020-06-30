@@ -27,12 +27,12 @@ throw e;
 }),(0));
 });
 devtools.async.promise_based_set_immediate = (function devtools$async$promise_based_set_immediate(callback){
-var o__20858__auto___24198 = (function (){var o__20858__auto___24198 = (function (){var o__20858__auto___24198 = Promise;
-return (o__20858__auto___24198["resolve"]).call(o__20858__auto___24198);
+var o__20859__auto___24198 = (function (){var o__20859__auto___24198 = (function (){var o__20859__auto___24198 = Promise;
+return (o__20859__auto___24198["resolve"]).call(o__20859__auto___24198);
 })();
-return (o__20858__auto___24198["then"]).call(o__20858__auto___24198,callback);
+return (o__20859__auto___24198["then"]).call(o__20859__auto___24198,callback);
 })();
-(o__20858__auto___24198["catch"]).call(o__20858__auto___24198,devtools.async.rethrow_outside_promise);
+(o__20859__auto___24198["catch"]).call(o__20859__auto___24198,devtools.async.rethrow_outside_promise);
 
 return null;
 });
