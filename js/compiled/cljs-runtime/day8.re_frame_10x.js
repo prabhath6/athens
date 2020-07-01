@@ -22,12 +22,12 @@ goog.require('day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.core');
  */
 day8.re_frame_10x.debug_QMARK_ = goog.define("day8.re_frame_10x.debug_QMARK_",false);
 day8.re_frame_10x.fiber_component_path = (function day8$re_frame_10x$fiber_component_path(fiber){
-var name = (function (){var G__34640 = fiber;
-var G__34640__$1 = (((G__34640 == null))?null:(G__34640["type"]));
-if((G__34640__$1 == null)){
+var name = (function (){var G__34643 = fiber;
+var G__34643__$1 = (((G__34643 == null))?null:(G__34643["type"]));
+if((G__34643__$1 == null)){
 return null;
 } else {
-return (G__34640__$1["displayName"]);
+return (G__34643__$1["displayName"]);
 }
 })();
 var parent = (function (){var G__34644 = fiber;
