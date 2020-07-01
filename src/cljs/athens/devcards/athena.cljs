@@ -20,6 +20,12 @@
       KeyCodes)))
 
 
+;;; State
+
+;; TODO: Should this be stored in the re-frame db?
+(defonce *recent-items (r/atom {:show-recent? true :recent-items '()}))
+
+
 ;;; Styles
 
 
@@ -175,9 +181,10 @@
 
 
 (defn search-handler
-  [*cache *match]
+  [*cache *match *recent-items]
   (fn [e]
-    (let [query (.. e -target -value)]
+    (let [query (.. e -target -value)
+          _ (swap! *recent-items assoc :show-recent? true)]
       (if (clojure.string/blank? query)
         (reset! *match [query nil])
         (let [result (or (get @*cache query)
@@ -217,17 +224,32 @@
 
 
 (defn recent-el
-  []
-  [:div (use-style results-heading-style)
-   [:h5 "Recent"]
-   [:span (use-style hint-style)
-    "Press "
-    [:kbd "shift + enter"]
-    " to open in right sidebar."]])
+  [*recent-items]
+  (let [style-display {:style {:display (if (:show-recent? @*recent-items) "block" "none")}}
+        recent-item-length 10]
+    [:<>
+     [:div (use-style results-heading-style)
+      [:h5 (if (:show-recent? @*recent-items) "Recent" "Results")]
+      [:span (use-style hint-style)
+       "Press "
+       [:kbd "shift + enter"]
+       " to open in right sidebar."]]
+     [:div (merge (use-style results-list-style) style-display)
+      (doall
+        (for [[i x] (map-indexed list (take recent-item-length (:recent-items @*recent-items)))]
+          (let [query (:query x)
+                page-title (:page-title x)
+                block-uid (:block-uid x)
+                block-string (:block-string x)]
+            [:div (use-style result-style {:key i :on-click #(navigate-uid block-uid)})
+             [:h4.title (use-sub-style result-style :title) (highlight-match query page-title)]
+             (when block-string
+               [:span.preview (use-sub-style result-style :preview) (highlight-match query block-string)])
+             [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/ArrowForward)]]])))]]))
 
 
 (defn athena-el
-  [athena? *match change-handler]
+  [athena? *match change-handler *recent-items]
   (when athena?
     [:div.athena (use-style container-style)
      [:input (use-style athena-input-style
@@ -236,10 +258,11 @@
                          :placeholder "Find or Create Page"
                          :on-change   change-handler
                          :on-key-down key-down-handler})]
-     [recent-el]
+     [recent-el *recent-items]
      [(fn []
         (let [[query {:keys [pages blocks] :as result}] @*match]
           (when result
+            (swap! *recent-items assoc :show-recent? false)
             [:div (use-style results-list-style)
              (doall
                (for [[i x] (map-indexed list (take 40 (concat (take 20 pages) blocks)))]
@@ -247,7 +270,14 @@
                        page-title   (or (:node/title parent) (:node/title x))
                        block-uid    (or (:block/uid parent) (:block/uid x))
                        block-string (:block/string x)]
-                   [:div (use-style result-style {:key i :on-click #(navigate-uid block-uid)})
+                   [:div (use-style result-style {:key i :on-click (fn []
+                                                                     (let [selected-page {:page-title   page-title
+                                                                                          :block-uid    block-uid
+                                                                                          :block-string block-string
+                                                                                          :query        query}]
+                                                                       (when (nil? ((set (:recent-items *recent-items)) selected-page))
+                                                                         (swap! *recent-items update :recent-items conj selected-page)
+                                                                         (navigate-uid block-uid))))})
                     [:h4.title (use-sub-style result-style :title) (highlight-match query page-title)]
                     (when block-string
                       [:span.preview (use-sub-style result-style :preview) (highlight-match query block-string)])
@@ -259,8 +289,8 @@
   (let [athena? @(subscribe [:athena])
         *cache  (r/atom {})
         *match  (r/atom nil)
-        handler (search-handler *cache *match)]
-    [athena-el athena? *match handler]))
+        handler (search-handler *cache *match *recent-items)]
+    [athena-el athena? *match handler *recent-items]))
 
 
 ;;; Devcards
@@ -284,4 +314,5 @@
 (defcard-rg Athena-Prompt
   [:<>
    [athena-prompt-el]
-   [athena-component]])
+   [athena-component]]
+  *recent-items)
