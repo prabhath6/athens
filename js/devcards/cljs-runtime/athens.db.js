@@ -17,13 +17,13 @@ athens.db.parse_hms = (function athens$db$parse_hms(hms){
 if((!(cljs.core.coll_QMARK_(hms)))){
 return hms;
 } else {
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__32833_SHARP_){
-return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (acc,p__32834){
-var vec__32835 = p__32834;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32835,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32835,(1),null);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__34585_SHARP_){
+return cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (acc,p__34586){
+var vec__34587 = p__34586;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__34587,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__34587,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(acc,athens.db.convert_key(k),(athens.db.parse_hms.cljs$core$IFn$_invoke$arity$1 ? athens.db.parse_hms.cljs$core$IFn$_invoke$arity$1(v) : athens.db.parse_hms.call(null,v)));
-}),cljs.core.PersistentArrayMap.EMPTY,p1__32833_SHARP_);
+}),cljs.core.PersistentArrayMap.EMPTY,p1__34585_SHARP_);
 }),hms);
 }
 });
@@ -31,10 +31,10 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(acc,athens.db.convert_key(k
  * Parse tuples exported via method specified in https://roamresearch.com/#/app/ego/page/eJ14YtH2G.
  */
 athens.db.parse_tuples = (function athens$db$parse_tuples(tuples){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__32839_SHARP_){
-return cljs.core.cons(new cljs.core.Keyword("db","add","db/add",235286841),p1__32839_SHARP_);
-}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__32838_SHARP_){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.edn.read_string,p1__32838_SHARP_);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__34591_SHARP_){
+return cljs.core.cons(new cljs.core.Keyword("db","add","db/add",235286841),p1__34591_SHARP_);
+}),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__34590_SHARP_){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2(clojure.edn.read_string,p1__34590_SHARP_);
 }),cljs.core.rest(cljs.core.partition.cljs$core$IFn$_invoke$arity$2((3),tuples))));
 });
 /**
@@ -79,10 +79,10 @@ while(true){
 if(cljs.core.truth_(new cljs.core.Keyword("node","title","node/title",628940777).cljs$core$IFn$_invoke$arity$1(b))){
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(res,b);
 } else {
-var G__32850 = cljs.core.first(new cljs.core.Keyword("block","_children","block/_children",1128070632).cljs$core$IFn$_invoke$arity$1(b));
-var G__32851 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(res,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(b,new cljs.core.Keyword("block","_children","block/_children",1128070632)));
-b = G__32850;
-res = G__32851;
+var G__34612 = cljs.core.first(new cljs.core.Keyword("block","_children","block/_children",1128070632).cljs$core$IFn$_invoke$arity$1(b));
+var G__34613 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(res,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(b,new cljs.core.Keyword("block","_children","block/_children",1128070632)));
+b = G__34612;
+res = G__34613;
 continue;
 }
 break;
@@ -124,10 +124,10 @@ return acc;
 if(cljs.core.truth_((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(x) : pred.call(null,x)))){
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(acc,x);
 } else {
-var G__32857 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(acc,x);
-var G__32858 = cljs.core.next(xs__$1);
-acc = G__32857;
-xs__$1 = G__32858;
+var G__34620 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(acc,x);
+var G__34621 = cljs.core.next(xs__$1);
+acc = G__34620;
+xs__$1 = G__34621;
 continue;
 
 }
@@ -139,20 +139,20 @@ athens.db.trim_head = (function athens$db$trim_head(xs,n){
 return cljs.core.vec(cljs.core.drop.cljs$core$IFn$_invoke$arity$2((cljs.core.count(xs) - n),xs));
 });
 athens.db.find_prev = (function athens$db$find_prev(xs,pred){
-return cljs.core.last(cljs.core.take_while.cljs$core$IFn$_invoke$arity$2((function (p1__32840_SHARP_){
-return cljs.core.not((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(p1__32840_SHARP_) : pred.call(null,p1__32840_SHARP_)));
+return cljs.core.last(cljs.core.take_while.cljs$core$IFn$_invoke$arity$2((function (p1__34595_SHARP_){
+return cljs.core.not((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(p1__34595_SHARP_) : pred.call(null,p1__34595_SHARP_)));
 }),xs));
 });
 athens.db.find_next = (function athens$db$find_next(xs,pred){
-return cljs.core.fnext(cljs.core.drop_while.cljs$core$IFn$_invoke$arity$2((function (p1__32841_SHARP_){
-return cljs.core.not((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(p1__32841_SHARP_) : pred.call(null,p1__32841_SHARP_)));
+return cljs.core.fnext(cljs.core.drop_while.cljs$core$IFn$_invoke$arity$2((function (p1__34596_SHARP_){
+return cljs.core.not((pred.cljs$core$IFn$_invoke$arity$1 ? pred.cljs$core$IFn$_invoke$arity$1(p1__34596_SHARP_) : pred.call(null,p1__34596_SHARP_)));
 }),xs));
 });
 datascript.core.listen_BANG_.cljs$core$IFn$_invoke$arity$3(athens.db.dsdb,new cljs.core.Keyword(null,"history","history",-247395220),(function (tx_report){
-var map__32843 = tx_report;
-var map__32843__$1 = (((((!((map__32843 == null))))?(((((map__32843.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__32843.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__32843):map__32843);
-var db_before = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__32843__$1,new cljs.core.Keyword(null,"db-before","db-before",-553691536));
-var db_after = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__32843__$1,new cljs.core.Keyword(null,"db-after","db-after",-571884666));
+var map__34598 = tx_report;
+var map__34598__$1 = (((((!((map__34598 == null))))?(((((map__34598.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__34598.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__34598):map__34598);
+var db_before = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__34598__$1,new cljs.core.Keyword(null,"db-before","db-before",-553691536));
+var db_after = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__34598__$1,new cljs.core.Keyword(null,"db-after","db-after",-571884666));
 if(cljs.core.truth_((function (){var and__4174__auto__ = db_before;
 if(cljs.core.truth_(and__4174__auto__)){
 return db_after;
@@ -161,8 +161,8 @@ return and__4174__auto__;
 }
 })())){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(athens.db.history,(function (h){
-return athens.db.trim_head(cljs.core.conj.cljs$core$IFn$_invoke$arity$2(athens.db.drop_tail(h,(function (p1__32842_SHARP_){
-return (p1__32842_SHARP_ === db_before);
+return athens.db.trim_head(cljs.core.conj.cljs$core$IFn$_invoke$arity$2(athens.db.drop_tail(h,(function (p1__34597_SHARP_){
+return (p1__34597_SHARP_ === db_before);
 })),db_after),(10));
 }));
 } else {
@@ -171,7 +171,7 @@ return null;
 }));
 if((typeof athens !== 'undefined') && (typeof athens.db !== 'undefined') && (typeof athens.db.rfdb !== 'undefined')){
 } else {
-athens.db.rfdb = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"errors","errors",-908790718),new cljs.core.Keyword(null,"drag-bullet","drag-bullet",441161411),new cljs.core.Keyword(null,"current-route","current-route",2067529448),new cljs.core.Keyword(null,"editing-uid","editing-uid",1372614377),new cljs.core.Keyword(null,"left-sidebar","left-sidebar",-1413634357),new cljs.core.Keyword(null,"tooltip-uid","tooltip-uid",-1719650452),new cljs.core.Keyword(null,"devtool","devtool",1338288336),new cljs.core.Keyword(null,"loading","loading",-737050189),new cljs.core.Keyword("right-sidebar","items","right-sidebar/items",-881766733),new cljs.core.Keyword(null,"athena","athena",-1523991628),new cljs.core.Keyword("right-sidebar","open","right-sidebar/open",83006133),new cljs.core.Keyword(null,"user","user",1532431356)],[cljs.core.PersistentArrayMap.EMPTY,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"uid","uid",-1447769400),null,new cljs.core.Keyword(null,"x","x",2099068185),null,new cljs.core.Keyword(null,"y","y",-1757859776),null,new cljs.core.Keyword("closest","uid","closest/uid",-582260451),null,new cljs.core.Keyword("closest","kind","closest/kind",429209294),null], null),null,null,false,null,false,true,new cljs.core.PersistentArrayMap(null, 3, ["OaSVyM_nr",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("node","title","node/title",628940777),"Athens FAQ",new cljs.core.Keyword(null,"open","open",-1763596448),false,new cljs.core.Keyword(null,"index","index",-1531685915),(0)], null),"p1Xv2crs3",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("node","title","node/title",628940777),"Hyperlink",new cljs.core.Keyword(null,"open","open",-1763596448),true,new cljs.core.Keyword(null,"index","index",-1531685915),(1)], null),"jbiKpcmIX",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("block","string","block/string",-2066596447),"Firstly, I wouldn't be surprised if Roam was eventually open-sourced.",new cljs.core.Keyword(null,"open","open",-1763596448),true,new cljs.core.Keyword(null,"index","index",-1531685915),(2)], null)], null),false,true,"Jeff"]);
+athens.db.rfdb = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"errors","errors",-908790718),new cljs.core.Keyword(null,"recent-items","recent-items",1341309602),new cljs.core.Keyword(null,"drag-bullet","drag-bullet",441161411),new cljs.core.Keyword(null,"current-route","current-route",2067529448),new cljs.core.Keyword(null,"editing-uid","editing-uid",1372614377),new cljs.core.Keyword(null,"left-sidebar","left-sidebar",-1413634357),new cljs.core.Keyword(null,"tooltip-uid","tooltip-uid",-1719650452),new cljs.core.Keyword(null,"devtool","devtool",1338288336),new cljs.core.Keyword(null,"loading","loading",-737050189),new cljs.core.Keyword("right-sidebar","items","right-sidebar/items",-881766733),new cljs.core.Keyword(null,"athena","athena",-1523991628),new cljs.core.Keyword(null,"show-recent?","show-recent?",927659573),new cljs.core.Keyword("right-sidebar","open","right-sidebar/open",83006133),new cljs.core.Keyword(null,"user","user",1532431356)],[cljs.core.PersistentArrayMap.EMPTY,cljs.core.List.EMPTY,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"uid","uid",-1447769400),null,new cljs.core.Keyword(null,"x","x",2099068185),null,new cljs.core.Keyword(null,"y","y",-1757859776),null,new cljs.core.Keyword("closest","uid","closest/uid",-582260451),null,new cljs.core.Keyword("closest","kind","closest/kind",429209294),null], null),null,null,false,null,false,true,new cljs.core.PersistentArrayMap(null, 3, ["OaSVyM_nr",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("node","title","node/title",628940777),"Athens FAQ",new cljs.core.Keyword(null,"open","open",-1763596448),false,new cljs.core.Keyword(null,"index","index",-1531685915),(0)], null),"p1Xv2crs3",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("node","title","node/title",628940777),"Hyperlink",new cljs.core.Keyword(null,"open","open",-1763596448),true,new cljs.core.Keyword(null,"index","index",-1531685915),(1)], null),"jbiKpcmIX",new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword("block","string","block/string",-2066596447),"Firstly, I wouldn't be surprised if Roam was eventually open-sourced.",new cljs.core.Keyword(null,"open","open",-1763596448),true,new cljs.core.Keyword(null,"index","index",-1531685915),(2)], null)], null),false,true,true,"Jeff"]);
 }
 
 //# sourceMappingURL=athens.db.js.map

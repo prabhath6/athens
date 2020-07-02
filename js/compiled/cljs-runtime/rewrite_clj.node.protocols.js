@@ -121,40 +121,40 @@ throw cljs.core.missing_protocol("Node.string",_);
 
 goog.object.set(rewrite_clj.node.protocols.Node,"object",true);
 
-var G__29784_29808 = rewrite_clj.node.protocols.tag;
-var G__29785_29809 = "object";
-var G__29786_29810 = (function (_){
+var G__48464_48514 = rewrite_clj.node.protocols.tag;
+var G__48465_48515 = "object";
+var G__48466_48516 = (function (_){
 return new cljs.core.Keyword(null,"unknown","unknown",-935977881);
 });
-goog.object.set(G__29784_29808,G__29785_29809,G__29786_29810);
+goog.object.set(G__48464_48514,G__48465_48515,G__48466_48516);
 
-var G__29787_29811 = rewrite_clj.node.protocols.printable_only_QMARK_;
-var G__29788_29812 = "object";
-var G__29789_29813 = (function (_){
+var G__48467_48517 = rewrite_clj.node.protocols.printable_only_QMARK_;
+var G__48468_48518 = "object";
+var G__48469_48519 = (function (_){
 return false;
 });
-goog.object.set(G__29787_29811,G__29788_29812,G__29789_29813);
+goog.object.set(G__48467_48517,G__48468_48518,G__48469_48519);
 
-var G__29790_29814 = rewrite_clj.node.protocols.sexpr;
-var G__29791_29815 = "object";
-var G__29792_29816 = (function (this$){
+var G__48470_48520 = rewrite_clj.node.protocols.sexpr;
+var G__48471_48521 = "object";
+var G__48472_48522 = (function (this$){
 return this$;
 });
-goog.object.set(G__29790_29814,G__29791_29815,G__29792_29816);
+goog.object.set(G__48470_48520,G__48471_48521,G__48472_48522);
 
-var G__29793_29817 = rewrite_clj.node.protocols.length;
-var G__29794_29818 = "object";
-var G__29795_29819 = (function (this$){
+var G__48473_48524 = rewrite_clj.node.protocols.length;
+var G__48474_48525 = "object";
+var G__48475_48526 = (function (this$){
 return cljs.core.count(rewrite_clj.node.protocols.string(this$));
 });
-goog.object.set(G__29793_29817,G__29794_29818,G__29795_29819);
+goog.object.set(G__48473_48524,G__48474_48525,G__48475_48526);
 
-var G__29796_29820 = rewrite_clj.node.protocols.string;
-var G__29797_29821 = "object";
-var G__29798_29822 = (function (this$){
+var G__48476_48527 = rewrite_clj.node.protocols.string;
+var G__48477_48528 = "object";
+var G__48478_48529 = (function (this$){
 return cljs.core.pr_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([this$], 0));
 });
-goog.object.set(G__29796_29820,G__29797_29821,G__29798_29822);
+goog.object.set(G__48476_48527,G__48477_48528,G__48478_48529);
 /**
  * Given a seq of nodes, convert those that represent s-expressions
  * to the respective forms.
@@ -249,26 +249,26 @@ throw cljs.core.missing_protocol("InnerNode.replace-children",_);
 
 goog.object.set(rewrite_clj.node.protocols.InnerNode,"object",true);
 
-var G__29799_29823 = rewrite_clj.node.protocols.inner_QMARK_;
-var G__29800_29824 = "object";
-var G__29801_29825 = (function (_){
+var G__48494_48540 = rewrite_clj.node.protocols.inner_QMARK_;
+var G__48495_48541 = "object";
+var G__48496_48542 = (function (_){
 return false;
 });
-goog.object.set(G__29799_29823,G__29800_29824,G__29801_29825);
+goog.object.set(G__48494_48540,G__48495_48541,G__48496_48542);
 
-var G__29802_29826 = rewrite_clj.node.protocols.children;
-var G__29803_29827 = "object";
-var G__29804_29828 = (function (_){
+var G__48497_48543 = rewrite_clj.node.protocols.children;
+var G__48498_48544 = "object";
+var G__48499_48545 = (function (_){
 throw (new Error("UnsupportedOperationException"));
 });
-goog.object.set(G__29802_29826,G__29803_29827,G__29804_29828);
+goog.object.set(G__48497_48543,G__48498_48544,G__48499_48545);
 
-var G__29805_29829 = rewrite_clj.node.protocols.replace_children;
-var G__29806_29830 = "object";
-var G__29807_29831 = (function (_,___$1){
+var G__48504_48546 = rewrite_clj.node.protocols.replace_children;
+var G__48505_48547 = "object";
+var G__48506_48548 = (function (_,___$1){
 throw (new Error("UnsupportedOperationException"));
 });
-goog.object.set(G__29805_29829,G__29806_29830,G__29807_29831);
+goog.object.set(G__48504_48546,G__48505_48547,G__48506_48548);
 /**
  * Get all child s-expressions for the given node.
  */
