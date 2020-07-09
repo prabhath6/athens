@@ -208,6 +208,22 @@
                    :style {:font-size "11px"}}])
 
 
+(defn el-component
+      [{:keys [query :node/title :block/string key on-click-handler class]}]
+      (let [el-component-styles {:key      key
+                                 :on-click on-click-handler}
+            el-component-styles-2 (when class
+                                      (assoc el-component-styles :class class))
+            p (if (nil? el-component-styles-2)
+                el-component-styles
+                el-component-styles-2)]
+           [:div (use-style result-style p)
+            [:h4.title (use-sub-style result-style :title) (highlight-match query title)]
+            (when string
+                  [:span.preview (use-sub-style result-style :preview) (highlight-match query string)])
+            [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/ArrowForward)]]]))
+
+
 (defn results-el
   [state]
   (let [query? (str/blank? (:query @state))
@@ -223,13 +239,9 @@
         (doall
           (for [[i x] (map-indexed list recent-items)]
             (when x
-              (let [{:keys [query :node/title :block/uid :block/string]} x]
-                [:div (use-style result-style {:key      i
-                                               :on-click #(navigate-uid uid)})
-                 [:h4.title (use-sub-style result-style :title) (highlight-match query title)]
-                 (when string
-                   [:span.preview (use-sub-style result-style :preview) (highlight-match query string)])
-                 [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/ArrowForward)]]]))))])]))
+              (let [el-component-data (assoc x :key i
+                                             :on-click-handler (fn [] (navigate-uid (:block/uid x))))]
+                   (el-component el-component-data)))))])]))
 
 
 (defn athena-component
@@ -269,16 +281,15 @@
                      [:b "Create Page: "]
                      query]
                     [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/Create)]]]
-                   [:div (use-style result-style {:key      i
-                                                  :on-click (fn []
-                                                              (let [selected-page {:node/title   title
-                                                                                   :block/uid    uid
-                                                                                   :block/string string
-                                                                                   :query        query}]
-                                                                (dispatch [:athena/update-recent-items selected-page])
-                                                                (navigate-uid uid)))
-                                                  :class    (when (= i index) "selected")})
-                    [:h4.title (use-sub-style result-style :title) (highlight-match query title)]
-                    (when string
-                      [:span.preview (use-sub-style result-style :preview) (highlight-match query string)])
-                    [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/ArrowForward)]]])))]))]])))
+                   (let [selected-page {:node/title   title
+                                        :block/uid    uid
+                                        :block/string string
+                                        :query        query}
+                         on-click-handler (fn []
+                                              (dispatch [:athena/update-recent-items selected-page])
+                                              (navigate-uid uid))
+                         selected-page (assoc selected-page
+                                              :key i
+                                              :on-click-handler on-click-handler
+                                              :class (when (= i index) "selected"))]
+                        (el-component selected-page)))))]))]])))
