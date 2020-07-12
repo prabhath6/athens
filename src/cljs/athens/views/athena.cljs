@@ -196,6 +196,22 @@
       :else nil)))
 
 
+(defn drop-down
+  ([query title string key on-click-handler]
+   (drop-down query title string key on-click-handler nil))
+  ([query title string key on-click-handler class]
+   (let [component-attributes {:key      key
+                               :on-click on-click-handler}
+         component-attributes-with-class (if class
+                                           (assoc component-attributes :class class)
+                                           component-attributes)]
+     [:div (use-style result-style component-attributes-with-class)
+      [:h4.title (use-sub-style result-style :title) (highlight-match query title)]
+      (when string
+        [:span.preview (use-sub-style result-style :preview) (highlight-match query string)])
+      [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/ArrowForward)]]])))
+
+
 ;;; Components
 
 
@@ -206,42 +222,6 @@
                            [:> mui-icons/Search]
                            [:span "Find or Create a Page"]]
                    :style {:font-size "11px"}}])
-
-
-(defn el-component
-      [{:keys [query :node/title :block/string key on-click-handler class]}]
-      (let [el-component-styles {:key      key
-                                 :on-click on-click-handler}
-            el-component-styles-2 (when class
-                                      (assoc el-component-styles :class class))
-            p (if (nil? el-component-styles-2)
-                el-component-styles
-                el-component-styles-2)]
-           [:div (use-style result-style p)
-            [:h4.title (use-sub-style result-style :title) (highlight-match query title)]
-            (when string
-                  [:span.preview (use-sub-style result-style :preview) (highlight-match query string)])
-            [:span.link-leader (use-sub-style result-style :link-leader) [(r/adapt-react-class mui-icons/ArrowForward)]]]))
-
-
-(defn results-el
-  [state]
-  (let [query? (str/blank? (:query @state))
-        recent-items @(subscribe [:athena/get-recent])]
-    [:<> [:div (use-style results-heading-style)
-          [:h5 (if query? "Recent" "Results")]
-          [:span (use-style hint-style)
-           "Press "
-           [:kbd "shift + enter"]
-           " to open in right sidebar."]]
-     (when query?
-       [:div (use-style results-list-style)
-        (doall
-          (for [[i x] (map-indexed list recent-items)]
-            (when x
-              (let [el-component-data (assoc x :key i
-                                             :on-click-handler (fn [] (navigate-uid (:block/uid x))))]
-                   (el-component el-component-data)))))])]))
 
 
 (defn athena-component
@@ -259,15 +239,31 @@
                            :placeholder "Find or Create Page"
                            :on-change   (fn [e] (search-handler (.. e -target -value)))
                            :on-key-down (fn [e] (key-down-handler e s))})]
-       [results-el s]
+       [(fn []
+          (let [query? (str/blank? (:query @s))
+                recent-items @(subscribe [:athena/get-recent])]
+            [:<> [:div (use-style results-heading-style)
+                  [:h5 (if query? "Recent" "Results")]
+                  [:span (use-style hint-style)
+                   "Press "
+                   [:kbd "shift + enter"]
+                   " to open in right sidebar."]]
+             (when query?
+               [:div (use-style results-list-style)
+                (doall
+                  (for [[i x] (map-indexed list recent-items)]
+                    (when x
+                      (let [{:keys [query :node/title :block/string]} x
+                            on-click-handler (fn [] (navigate-uid (:block/uid x)))]
+                        (drop-down query title string i on-click-handler)))))])]))]
        [(fn []
           (let [{:keys [results query index]} @s]
             [:div (use-style results-list-style)
              (doall
                (for [[i x] (map-indexed list results)
                      :let [parent (:block/parent x)
-                           title  (or (:node/title parent) (:node/title x))
-                           uid    (or (:block/uid parent) (:block/uid x))
+                           title (or (:node/title parent) (:node/title x))
+                           uid (or (:block/uid parent) (:block/uid x))
                            string (:block/string x)]]
                  (if (nil? x)
                    ^{:key i}
@@ -276,7 +272,7 @@
                                                                 (dispatch [:athena/toggle])
                                                                 (dispatch [:page/create query uid])
                                                                 (navigate-uid uid)))
-                                                  :class (when (= i index) "selected")})
+                                                  :class    (when (= i index) "selected")})
                     [:h4.title (use-sub-style result-style :title)
                      [:b "Create Page: "]
                      query]
@@ -284,12 +280,9 @@
                    (let [selected-page {:node/title   title
                                         :block/uid    uid
                                         :block/string string
-                                        :query        query}
+                                        :query        query
+                                        :class        (when (= i index) "selected")}
                          on-click-handler (fn []
-                                              (dispatch [:athena/update-recent-items selected-page])
-                                              (navigate-uid uid))
-                         selected-page (assoc selected-page
-                                              :key i
-                                              :on-click-handler on-click-handler
-                                              :class (when (= i index) "selected"))]
-                        (el-component selected-page)))))]))]])))
+                                            (dispatch [:athena/update-recent-items selected-page])
+                                            (navigate-uid uid))]
+                     (drop-down query title string i on-click-handler)))))]))]])))
